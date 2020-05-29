@@ -1,0 +1,1039 @@
+apr. 11, 2020 3:07:14 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Repairing b18.ecore
+apr. 11, 2020 3:07:14 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Running with preferences [1, 3, 6]
+apr. 11, 2020 3:07:14 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initial number of errors in model: 2
+Maximum number of steps per episode: 20
+Errors to fix: [Error 443, message=The name 'null' is not well formed
+, Error 25, message=A class that is an interface must also be abstract
+]
+apr. 11, 2020 3:07:14 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initializing Q-table for the errors.
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Number of episodes: 25
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight 0.0
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: 450.0
+0.0 + 1.0 * (-150 + 1.0 * 450.0 - 0.0) = 300.0
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight 300.0
+
+
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 450.0
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 450.0
+Alpha: 1.0
+
+Reward: -150
+450.0 + 1.0 * (-150 - 450.0) = -150.0
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight 300.0
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 300.0
+Alpha: 0.9608333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+300.0 + 0.9608333333333333 * (-150 + 1.0 * -150.0 - 300.0) = -276.5
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -276.5
+
+
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:15 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:16 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.9608333333333333
+
+Reward: -150
+-150.0 + 0.9608333333333333 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:16 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:16 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:16 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:16 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:16 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.0
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 0.9216666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+0.0 + 0.9216666666666666 * (-150 + 1.0 * -150.0 - 0.0) = -276.5
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -276.5
+
+
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.9216666666666666
+
+Reward: -150
+-150.0 + 0.9216666666666666 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -276.5
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -276.5
+Alpha: 0.8825000000000001
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-276.5 + 0.8825000000000001 * (-150 + 1.0 * -150.0 - -276.5) = -297.23875
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -297.23875
+
+
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:17 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.8825000000000001
+
+Reward: -150
+-150.0 + 0.8825000000000001 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -276.5
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -276.5
+Alpha: 0.8433333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-276.5 + 0.8433333333333334 * (-150 + 1.0 * -150.0 - -276.5) = -296.3183333333333
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -296.3183333333333
+
+
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:18 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.8433333333333334
+
+Reward: -150
+-150.0 + 0.8433333333333334 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -296.3183333333333
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -296.3183333333333
+Alpha: 0.8041666666666667
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-296.3183333333333 + 0.8041666666666667 * (-150 + 1.0 * -150.0 - -296.3183333333333) = -299.27900694444446
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -299.27900694444446
+
+
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:19 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.8041666666666667
+
+Reward: -150
+-150.0 + 0.8041666666666667 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -297.23875
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -297.23875
+Alpha: 0.765
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-297.23875 + 0.765 * (-150 + 1.0 * -150.0 - -297.23875) = -299.35110625
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.35110625
+
+
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.765
+
+Reward: -150
+-150.0 + 0.765 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:20 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.27900694444446
+apr. 11, 2020 3:07:21 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:21 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.27900694444446
+Alpha: 0.7258333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.27900694444446 + 0.7258333333333333 * (-150 + 1.0 * -150.0 - -299.27900694444446) = -299.8023277372685
+apr. 11, 2020 3:07:21 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -299.8023277372685
+
+
+apr. 11, 2020 3:07:21 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:21 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:21 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.7258333333333333
+
+Reward: -150
+-150.0 + 0.7258333333333333 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.8023277372685
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.8023277372685
+Alpha: 0.6866666666666668
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.8023277372685 + 0.6866666666666668 * (-150 + 1.0 * -150.0 - -299.8023277372685) = -299.9380626910108
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -299.9380626910108
+
+
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight -150.16670945327547
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.16670945327547
+Alpha: 0.6866666666666668
+
+Reward: -150
+-150.16670945327547 + 0.6866666666666668 * (-150 - -150.16670945327547) = -150.05223562869298
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight -150.05223562869298
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:22 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.9380626910108
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9380626910108
+Alpha: 0.6475
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.9380626910108 + 0.6475 * (-150 + 1.0 * -150.0 - -299.9380626910108) = -299.9781670985813
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -299.9781670985813
+
+
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.6475
+
+Reward: -150
+-150.0 + 0.6475 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.35110625
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.35110625
+Alpha: 0.6083333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.35110625 + 0.6083333333333334 * (-150 + 1.0 * -150.0 - -299.35110625) = -299.74584994791667
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.74584994791667
+
+
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:23 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.6083333333333334
+
+Reward: -150
+-150.0 + 0.6083333333333334 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.74584994791667
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.74584994791667
+Alpha: 0.5691666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.74584994791667 + 0.5691666666666666 * (-150 + 1.0 * -150.0 - -299.74584994791667) = -299.8905036858941
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.8905036858941
+
+
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.5691666666666666
+
+Reward: -150
+-150.0 + 0.5691666666666666 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.8905036858941
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.8905036858941
+Alpha: 0.53
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.8905036858941 + 0.53 * (-150 + 1.0 * -150.0 - -299.8905036858941) = -299.9485367323702
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.9485367323702
+
+
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.53
+
+Reward: -150
+-150.0 + 0.53 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.9485367323702
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9485367323702
+Alpha: 0.49083333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.9485367323702 + 0.49083333333333334 * (-150 + 1.0 * -150.0 - -299.9485367323702) = -299.9737966195652
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.9737966195652
+
+
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.49083333333333334
+
+Reward: -150
+-150.0 + 0.49083333333333334 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.9781670985813
+apr. 11, 2020 3:07:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9781670985813
+Alpha: 0.45166666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.9781670985813 + 0.45166666666666666 * (-150 + 1.0 * -150.0 - -299.9781670985813) = -299.9880282923888
+apr. 11, 2020 3:07:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -299.9880282923888
+
+
+apr. 11, 2020 3:07:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.45166666666666666
+
+Reward: -150
+-150.0 + 0.45166666666666666 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.9880282923888
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9880282923888
+Alpha: 0.4125
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.9880282923888 + 0.4125 * (-150 + 1.0 * -150.0 - -299.9880282923888) = -299.9929666217784
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -299.9929666217784
+
+
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.4125
+
+Reward: -150
+-150.0 + 0.4125 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.9737966195652
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9737966195652
+Alpha: 0.3733333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.9737966195652 + 0.3733333333333334 * (-150 + 1.0 * -150.0 - -299.9737966195652) = -299.9835792149275
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.9835792149275
+
+
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.3733333333333334
+
+Reward: -150
+-150.0 + 0.3733333333333334 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.9835792149275
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9835792149275
+Alpha: 0.3341666666666667
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.9835792149275 + 0.3341666666666667 * (-150 + 1.0 * -150.0 - -299.9835792149275) = -299.9890664939392
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.9890664939392
+
+
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.3341666666666667
+
+Reward: -150
+-150.0 + 0.3341666666666667 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.9890664939392
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9890664939392
+Alpha: 0.29500000000000004
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.9890664939392 + 0.29500000000000004 * (-150 + 1.0 * -150.0 - -299.9890664939392) = -299.99229187822715
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.99229187822715
+
+
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.29500000000000004
+
+Reward: -150
+-150.0 + 0.29500000000000004 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.99229187822715
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.99229187822715
+Alpha: 0.25583333333333336
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.99229187822715 + 0.25583333333333336 * (-150 + 1.0 * -150.0 - -299.99229187822715) = -299.99426387271404
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.99426387271404
+
+
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.25583333333333336
+
+Reward: -150
+-150.0 + 0.25583333333333336 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.9929666217784
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9929666217784
+Alpha: 0.21666666666666679
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.9929666217784 + 0.21666666666666679 * (-150 + 1.0 * -150.0 - -299.9929666217784) = -299.9944905203931
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -299.9944905203931
+
+
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.21666666666666679
+
+Reward: -150
+-150.0 + 0.21666666666666679 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.99426387271404
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.99426387271404
+Alpha: 0.1775000000000001
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.99426387271404 + 0.1775000000000001 * (-150 + 1.0 * -150.0 - -299.99426387271404) = -299.9952820353073
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.9952820353073
+
+
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.1775000000000001
+
+Reward: -150
+-150.0 + 0.1775000000000001 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.9944905203931
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9944905203931
+Alpha: 0.1383333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.9944905203931 + 0.1383333333333333 * (-150 + 1.0 * -150.0 - -299.9944905203931) = -299.99525266507203
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -299.99525266507203
+
+
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.1383333333333333
+
+Reward: -150
+-150.0 + 0.1383333333333333 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.99525266507203
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.99525266507203
+Alpha: 0.09916666666666674
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.99525266507203 + 0.09916666666666674 * (-150 + 1.0 * -150.0 - -299.99525266507203) = -299.9957234424524
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -299.9957234424524
+
+
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight -150.05223562869298
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.05223562869298
+Alpha: 0.09916666666666674
+
+Reward: -150
+-150.05223562869298 + 0.09916666666666674 * (-150 - -150.05223562869298) = -150.04705559551425
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight -150.04705559551425
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 0, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.9952820353073
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 25
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9952820353073
+Alpha: 0.06000000000000005
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.9952820353073 + 0.06000000000000005 * (-150 + 1.0 * -150.0 - -299.9952820353073) = -299.9955651131889
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -299.9955651131889
+
+
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 1, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:07:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.06000000000000005
+
+Reward: -150
+-150.0 + 0.06000000000000005 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Time repairing model: 19534 ms
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: 
+-----------------ALL SEQUENCES FOUND-------------------
+SIZE: 10
+DISCARDED SEQUENCES: 15
+--------::::B E S T   S E Q U E N C E   I S::::---------
+Sequence [id=0, seq=[ErrorAction [Error: 443 The name 'null' is not well formed, Action: setName, Error hierarchy: 0]
+, ErrorAction [Error: 25 A class that is an interface must also be abstract, Action: delete, Error hierarchy: 0]
+], weight=-300.0]
+
+ with 2 actions.
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:07:34 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml

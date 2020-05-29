@@ -1,0 +1,959 @@
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Repairing d1.ecore
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Running with preferences [4]
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initial number of errors in model: 2
+Maximum number of steps per episode: 20
+Errors to fix: [Error 25, message=A class that is an interface must also be abstract
+, Error 27, message=An operation with void return type must have an upper bound of 1 not 9
+]
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initializing Q-table for the errors.
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Number of episodes: 25
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 1635.6136196409195
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1635.6136196409195
+Alpha: 1.0
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 700.0
+1635.6136196409195 + 1.0 * (100 + 1.0 * 700.0 - 1635.6136196409195) = 800.0
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 800.0
+
+
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 700.0
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 700.0
+Alpha: 1.0
+
+Reward: 100
+700.0 + 1.0 * (100 - 700.0) = 100.0
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -670.3005241303069
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -670.3005241303069
+Alpha: 0.9608333333333333
+
+Reward: -1000
+-670.3005241303069 + 0.9608333333333333 * (-1000 - -670.3005241303069) = -987.086770528437
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -987.086770528437
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1 TOTAL REWARD -1000
+
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 800.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 800.0
+Alpha: 0.9216666666666666
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+800.0 + 0.9216666666666666 * (100 + 1.0 * 100.0 - 800.0) = 247.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 247.0
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.9216666666666666
+
+Reward: 100
+100.0 + 0.9216666666666666 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 591449609 setEType to new weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 247.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 247.0
+Alpha: 0.8825000000000001
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+247.0 + 0.8825000000000001 * (100 + 1.0 * 100.0 - 247.0) = 205.52249999999998
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 205.52249999999998
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.8825000000000001
+
+Reward: 100
+100.0 + 0.8825000000000001 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 205.52249999999998
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 205.52249999999998
+Alpha: 0.8433333333333334
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+205.52249999999998 + 0.8433333333333334 * (100 + 1.0 * 100.0 - 205.52249999999998) = 200.86519166666668
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.86519166666668
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.8433333333333334
+
+Reward: 100
+100.0 + 0.8433333333333334 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -987.086770528437
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -987.086770528437
+Alpha: 0.8041666666666667
+
+Reward: -1000
+-987.086770528437 + 0.8041666666666667 * (-1000 - -987.086770528437) = -997.4711592284856
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -997.4711592284856
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5 TOTAL REWARD -1000
+
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.86519166666668
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.86519166666668
+Alpha: 0.765
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.86519166666668 + 0.765 * (100 + 1.0 * 100.0 - 200.86519166666668) = 200.20332004166667
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.20332004166667
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.765
+
+Reward: 100
+100.0 + 0.765 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.20332004166667
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.20332004166667
+Alpha: 0.7258333333333333
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.20332004166667 + 0.7258333333333333 * (100 + 1.0 * 100.0 - 200.20332004166667) = 200.05574357809027
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.05574357809027
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -999.0780353566794
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -999.0780353566794
+Alpha: 0.7258333333333333
+
+Reward: -1000
+-999.0780353566794 + 0.7258333333333333 * (-1000 - -999.0780353566794) = -999.7472280269562
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -999.7472280269562
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7 TOTAL REWARD -900
+
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.05574357809027
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.05574357809027
+Alpha: 0.6866666666666668
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.05574357809027 + 0.6866666666666668 * (100 + 1.0 * 100.0 - 200.05574357809027) = 200.01746632113495
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.01746632113495
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.6866666666666668
+
+Reward: 100
+100.0 + 0.6866666666666668 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.01746632113495
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.01746632113495
+Alpha: 0.6475
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.01746632113495 + 0.6475 * (100 + 1.0 * 100.0 - 200.01746632113495) = 200.00615687820007
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00615687820007
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.6475
+
+Reward: 100
+100.0 + 0.6475 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:08 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -997.4711592284856
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -997.4711592284856
+Alpha: 0.6083333333333334
+
+Reward: -1000
+-997.4711592284856 + 0.6083333333333334 * (-1000 - -997.4711592284856) = -999.0095373644901
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -999.0095373644901
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10 TOTAL REWARD -1000
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00615687820007
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00615687820007
+Alpha: 0.5691666666666666
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00615687820007 + 0.5691666666666666 * (100 + 1.0 * 100.0 - 200.00615687820007) = 200.00265258835788
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00265258835788
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.5691666666666666
+
+Reward: 100
+100.0 + 0.5691666666666666 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00265258835788
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00265258835788
+Alpha: 0.53
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00265258835788 + 0.53 * (100 + 1.0 * 100.0 - 200.00265258835788) = 200.00124671652821
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00124671652821
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.53
+
+Reward: 100
+100.0 + 0.53 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00124671652821
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00124671652821
+Alpha: 0.49083333333333334
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00124671652821 + 0.49083333333333334 * (100 + 1.0 * 100.0 - 200.00124671652821) = 200.00063478649895
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00063478649895
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.49083333333333334
+
+Reward: 100
+100.0 + 0.49083333333333334 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00063478649895
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00063478649895
+Alpha: 0.45166666666666666
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00063478649895 + 0.45166666666666666 * (100 + 1.0 * 100.0 - 200.00063478649895) = 200.00034807459693
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00034807459693
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.45166666666666666
+
+Reward: 100
+100.0 + 0.45166666666666666 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 591449609 setEType to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00034807459693
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00034807459693
+Alpha: 0.4125
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00034807459693 + 0.4125 * (100 + 1.0 * 100.0 - 200.00034807459693) = 200.0002044938257
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.0002044938257
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -999.7472280269562
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -999.7472280269562
+Alpha: 0.4125
+
+Reward: -1000
+-999.7472280269562 + 0.4125 * (-1000 - -999.7472280269562) = -999.8514964658368
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -999.8514964658368
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15 TOTAL REWARD -900
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.0002044938257
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.0002044938257
+Alpha: 0.3733333333333334
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.0002044938257 + 0.3733333333333334 * (100 + 1.0 * 100.0 - 200.0002044938257) = 200.0001281494641
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.0001281494641
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.3733333333333334
+
+Reward: 100
+100.0 + 0.3733333333333334 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.0001281494641
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.0001281494641
+Alpha: 0.3341666666666667
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.0001281494641 + 0.3341666666666667 * (100 + 1.0 * 100.0 - 200.0001281494641) = 200.00008532618486
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00008532618486
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.3341666666666667
+
+Reward: 100
+100.0 + 0.3341666666666667 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00008532618486
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00008532618486
+Alpha: 0.29500000000000004
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00008532618486 + 0.29500000000000004 * (100 + 1.0 * 100.0 - 200.00008532618486) = 200.00006015496032
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00006015496032
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -999.8514964658368
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -999.8514964658368
+Alpha: 0.29500000000000004
+
+Reward: -1000
+-999.8514964658368 + 0.29500000000000004 * (-1000 - -999.8514964658368) = -999.895305008415
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -999.895305008415
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18 TOTAL REWARD -900
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00006015496032
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00006015496032
+Alpha: 0.25583333333333336
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00006015496032 + 0.25583333333333336 * (100 + 1.0 * 100.0 - 200.00006015496032) = 200.00004476531632
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00004476531632
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.25583333333333336
+
+Reward: 100
+100.0 + 0.25583333333333336 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00004476531632
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00004476531632
+Alpha: 0.21666666666666679
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00004476531632 + 0.21666666666666679 * (100 + 1.0 * 100.0 - 200.00004476531632) = 200.00003506616446
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00003506616446
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.21666666666666679
+
+Reward: 100
+100.0 + 0.21666666666666679 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -999.0095373644901
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -999.0095373644901
+Alpha: 0.1775000000000001
+
+Reward: -1000
+-999.0095373644901 + 0.1775000000000001 * (-1000 - -999.0095373644901) = -999.1853444822931
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action 99999 delete to new weight -999.1853444822931
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21 TOTAL REWARD -1000
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00003506616446
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00003506616446
+Alpha: 0.1383333333333333
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00003506616446 + 0.1383333333333333 * (100 + 1.0 * 100.0 - 200.00003506616446) = 200.00003021534505
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00003021534505
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.1383333333333333
+
+Reward: 100
+100.0 + 0.1383333333333333 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00003021534505
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00003021534505
+Alpha: 0.09916666666666674
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00003021534505 + 0.09916666666666674 * (100 + 1.0 * 100.0 - 200.00003021534505) = 200.00002721899
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.00002721899
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.09916666666666674
+
+Reward: 100
+100.0 + 0.09916666666666674 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 0, Fixing error 25: A class that is an interface must also be abstract
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setInterface in context 0 with weight 200.00002721899
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 200.00002721899
+Alpha: 0.06000000000000005
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.0
+200.00002721899 + 0.06000000000000005 * (100 + 1.0 * 100.0 - 200.00002721899) = 200.0000255858506
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 25, context 0, action -943639423 setInterface to new weight 200.0000255858506
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 9
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.0
+Alpha: 0.06000000000000005
+
+Reward: 100
+100.0 + 0.06000000000000005 * (100 - 100.0) = 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24 TOTAL REWARD 200
+
+
+
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Time repairing model: 2000 ms
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: 
+-----------------ALL SEQUENCES FOUND-------------------
+SIZE: 5
+DISCARDED SEQUENCES: 20
+--------::::B E S T   S E Q U E N C E   I S::::---------
+Sequence [id=0, seq=[ErrorAction [Error: 25 A class that is an interface must also be abstract, Action: setInterface, Error hierarchy: 0]
+, ErrorAction [Error: 27 An operation with void return type must have an upper bound of 1 not 9, Action: setUpperBound, Error hierarchy: 0]
+], weight=200.0]
+
+ with 2 actions.
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:55:09 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml

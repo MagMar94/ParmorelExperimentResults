@@ -1,0 +1,1039 @@
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Repairing b12.ecore
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Running with preferences [1, 3, 6]
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initial number of errors in model: 2
+Maximum number of steps per episode: 20
+Errors to fix: [Error 27, message=An operation with void return type must have an upper bound of 1 not 93
+, Error 401, message=The typed element must have a type
+]
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initializing Q-table for the errors.
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Number of episodes: 25
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 600.0000492414059
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 600.0000492414059
+Alpha: 1.0
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: 1444.9706382244765
+600.0000492414059 + 1.0 * (-150 + 1.0 * 1444.9706382244765 - 600.0000492414059) = 1294.9706382244765
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight 1294.9706382244765
+
+
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:01:55 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 118.63834260181096
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 118.63834260181096
+Alpha: 1.0
+
+Reward: -150
+118.63834260181096 + 1.0 * (-150 - 118.63834260181096) = -150.0
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1294.9706382244765
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1294.9706382244765
+Alpha: 0.9608333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: 1444.9706382244765
+1294.9706382244765 + 0.9608333333333333 * (-150 + 1.0 * 1444.9706382244765 - 1294.9706382244765) = 1294.9706382244765
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight 1294.9706382244765
+
+
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 1444.9706382244765
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1444.9706382244765
+Alpha: 0.9608333333333333
+
+Reward: -150
+1444.9706382244765 + 0.9608333333333333 * (-150 - 1444.9706382244765) = -87.53031666954121
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -87.53031666954121
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1294.9706382244765
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1294.9706382244765
+Alpha: 0.9216666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -87.53031666954121
+1294.9706382244765 + 0.9216666666666666 * (-150 + 1.0 * -87.53031666954121 - 1294.9706382244765) = -117.48440853617649
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -117.48440853617649
+
+
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -87.53031666954121
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -87.53031666954121
+Alpha: 0.9216666666666666
+
+Reward: -150
+-87.53031666954121 + 0.9216666666666666 * (-150 - -87.53031666954121) = -145.1065414724474
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -145.1065414724474
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -117.48440853617649
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -117.48440853617649
+Alpha: 0.8825000000000001
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -145.1065414724474
+-117.48440853617649 + 0.8825000000000001 * (-150 + 1.0 * -145.1065414724474 - -117.48440853617649) = -274.23594085243553
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -274.23594085243553
+
+
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -145.1065414724474
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -145.1065414724474
+Alpha: 0.8825000000000001
+
+Reward: -150
+-145.1065414724474 + 0.8825000000000001 * (-150 - -145.1065414724474) = -149.42501862301256
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.42501862301256
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -274.23594085243553
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -274.23594085243553
+Alpha: 0.8433333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.42501862301256
+-274.23594085243553 + 0.8433333333333334 * (-150 + 1.0 * -149.42501862301256 - -274.23594085243553) = -295.47872977228883
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -295.47872977228883
+
+
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.42501862301256
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.42501862301256
+Alpha: 0.8433333333333334
+
+Reward: -150
+-149.42501862301256 + 0.8433333333333334 * (-150 - -149.42501862301256) = -149.90991958427196
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.90991958427196
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:56 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -295.47872977228883
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -295.47872977228883
+Alpha: 0.8041666666666667
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.90991958427196
+-295.47872977228883 + 0.8041666666666667 * (-150 + 1.0 * -149.90991958427196 - -295.47872977228883) = -299.0421449127586
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.0421449127586
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.90991958427196
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.90991958427196
+Alpha: 0.8041666666666667
+
+Reward: -150
+-149.90991958427196 + 0.8041666666666667 * (-150 - -149.90991958427196) = -149.98235925191992
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.98235925191992
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -298.30776007959116
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -298.30776007959116
+Alpha: 0.765
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.98235925191992
+-298.30776007959116 + 0.765 * (-150 + 1.0 * -149.98235925191992 - -298.30776007959116) = -299.5888284464226
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -299.5888284464226
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.98235925191992
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.98235925191992
+Alpha: 0.765
+
+Reward: -150
+-149.98235925191992 + 0.765 * (-150 - -149.98235925191992) = -149.99585442420118
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99585442420118
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.0421449127586
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.0421449127586
+Alpha: 0.7258333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.99585442420118
+-299.0421449127586 + 0.7258333333333333 * (-150 + 1.0 * -149.99585442420118 - -299.0421449127586) = -299.7343790664807
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.7343790664807
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99585442420118
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99585442420118
+Alpha: 0.7258333333333333
+
+Reward: -150
+-149.99585442420118 + 0.7258333333333333 * (-150 - -149.99585442420118) = -149.99886342130182
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99886342130182
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.7343790664807
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.7343790664807
+Alpha: 0.6866666666666668
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.99886342130182
+-299.7343790664807 + 0.6866666666666668 * (-150 + 1.0 * -149.99886342130182 - -299.7343790664807) = -299.9159916567912
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.9159916567912
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99886342130182
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99886342130182
+Alpha: 0.6866666666666668
+
+Reward: -150
+-149.99886342130182 + 0.6866666666666668 * (-150 - -149.99886342130182) = -149.9996438720079
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.9996438720079
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -299.5888284464226
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.5888284464226
+Alpha: 0.6475
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.9996438720079
+-299.5888284464226 + 0.6475 * (-150 + 1.0 * -149.9996438720079 - -299.5888284464226) = -299.8548314344891
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -299.8548314344891
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.6475
+
+Reward: -150
+-150.0 + 0.6475 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -299.8548314344891
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.8548314344891
+Alpha: 0.6083333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.9996438720079
+-299.8548314344891 + 0.6083333333333334 * (-150 + 1.0 * -149.9996438720079 - -299.8548314344891) = -299.94292566731303
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -299.94292566731303
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.9996438720079
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.9996438720079
+Alpha: 0.6083333333333334
+
+Reward: -150
+-149.9996438720079 + 0.6083333333333334 * (-150 - -149.9996438720079) = -149.99986051653644
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99986051653644
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.9159916567912
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9159916567912
+Alpha: 0.5691666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.99986051653644
+-299.9159916567912 + 0.5691666666666666 * (-150 + 1.0 * -149.99986051653644 - -299.9159916567912) = -299.96372701612955
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.96372701612955
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99986051653644
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99986051653644
+Alpha: 0.5691666666666666
+
+Reward: -150
+-149.99986051653644 + 0.5691666666666666 * (-150 - -149.99986051653644) = -149.99993990587444
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99993990587444
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -299.94292566731303
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.94292566731303
+Alpha: 0.53
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.99993990587444
+-299.94292566731303 + 0.53 * (-150 + 1.0 * -149.99993990587444 - -299.94292566731303) = -299.9731432137506
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -299.9731432137506
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99993990587444
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99993990587444
+Alpha: 0.53
+
+Reward: -150
+-149.99993990587444 + 0.53 * (-150 - -149.99993990587444) = -149.99997175576098
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99997175576098
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:57 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.96372701612955
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.96372701612955
+Alpha: 0.49083333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.99997175576098
+-299.96372701612955 + 0.49083333333333334 * (-150 + 1.0 * -149.99997175576098 - -299.96372701612955) = -299.98151714249866
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.98151714249866
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99997175576098
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99997175576098
+Alpha: 0.49083333333333334
+
+Reward: -150
+-149.99997175576098 + 0.49083333333333334 * (-150 - -149.99997175576098) = -149.99998561897496
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99998561897496
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -299.9731432137506
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9731432137506
+Alpha: 0.45166666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.99998561897496
+-299.9731432137506 + 0.45166666666666666 * (-150 + 1.0 * -149.99998561897496 - -299.9731432137506) = -299.98526703344356
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -299.98526703344356
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99998561897496
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99998561897496
+Alpha: 0.45166666666666666
+
+Reward: -150
+-149.99998561897496 + 0.45166666666666666 * (-150 - -149.99998561897496) = -149.9999921144046
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.9999921144046
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.98151714249866
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.98151714249866
+Alpha: 0.4125
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.9999921144046
+-299.98151714249866 + 0.4125 * (-150 + 1.0 * -149.9999921144046 - -299.98151714249866) = -299.98913806840983
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.98913806840983
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.9999921144046
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.9999921144046
+Alpha: 0.4125
+
+Reward: -150
+-149.9999921144046 + 0.4125 * (-150 - -149.9999921144046) = -149.9999953672127
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.9999953672127
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -299.98526703344356
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.98526703344356
+Alpha: 0.3733333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.9999953672127
+-299.98526703344356 + 0.3733333333333334 * (-150 + 1.0 * -149.9999953672127 - -299.98526703344356) = -299.99076561138406
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -299.99076561138406
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.9999953672127
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.9999953672127
+Alpha: 0.3733333333333334
+
+Reward: -150
+-149.9999953672127 + 0.3733333333333334 * (-150 - -149.9999953672127) = -149.99999709678661
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99999709678661
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.98913806840983
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.98913806840983
+Alpha: 0.3341666666666667
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.99999709678661
+-299.98913806840983 + 0.3341666666666667 * (-150 + 1.0 * -149.99999709678661 - -299.98913806840983) = -299.99276679372576
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.99276679372576
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99999709678661
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99999709678661
+Alpha: 0.3341666666666667
+
+Reward: -150
+-149.99999709678661 + 0.3341666666666667 * (-150 - -149.99999709678661) = -149.99999806694376
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99999806694376
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -299.99076561138406
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.99076561138406
+Alpha: 0.29500000000000004
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.99999806694376
+-299.99076561138406 + 0.29500000000000004 * (-150 + 1.0 * -149.99999806694376 - -299.99076561138406) = -299.9934891857742
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -299.9934891857742
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99999806694376
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99999806694376
+Alpha: 0.29500000000000004
+
+Reward: -150
+-149.99999806694376 + 0.29500000000000004 * (-150 - -149.99999806694376) = -149.99999863719535
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99999863719535
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -299.9934891857742
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9934891857742
+Alpha: 0.25583333333333336
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.99999863719535
+-299.9934891857742 + 0.25583333333333336 * (-150 + 1.0 * -149.99999863719535 - -299.9934891857742) = -299.9951545204294
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -299.9951545204294
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99999863719535
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99999863719535
+Alpha: 0.25583333333333336
+
+Reward: -150
+-149.99999863719535 + 0.25583333333333336 * (-150 - -149.99999863719535) = -149.9999989858462
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.9999989858462
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.99276679372576
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.99276679372576
+Alpha: 0.21666666666666679
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.9999989858462
+-299.99276679372576 + 0.21666666666666679 * (-150 + 1.0 * -149.9999989858462 - -299.99276679372576) = -299.9943337686852
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.9943337686852
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -150.0
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.21666666666666679
+
+Reward: -150
+-150.0 + 0.21666666666666679 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 99999 delete to new weight -150.0
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:58 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.9943337686852
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9943337686852
+Alpha: 0.1775000000000001
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.9999989858462
+-299.9943337686852 + 0.1775000000000001 * (-150 + 1.0 * -149.9999989858462 - -299.9943337686852) = -299.9953393447313
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.9953393447313
+
+
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.9999989858462
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.9999989858462
+Alpha: 0.1775000000000001
+
+Reward: -150
+-149.9999989858462 + 0.1775000000000001 * (-150 - -149.9999989858462) = -149.9999991658585
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.9999991658585
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -299.9951545204294
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9951545204294
+Alpha: 0.1383333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.9999991658585
+-299.9951545204294 + 0.1383333333333333 * (-150 + 1.0 * -149.9999991658585 - -299.9951545204294) = -299.99582469638045
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -299.99582469638045
+
+
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.9999991658585
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.9999991658585
+Alpha: 0.1383333333333333
+
+Reward: -150
+-149.9999991658585 + 0.1383333333333333 * (-150 - -149.9999991658585) = -149.99999928124808
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99999928124808
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.9953393447313
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9953393447313
+Alpha: 0.09916666666666674
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.99999928124808
+-299.9953393447313 + 0.09916666666666674 * (-150 + 1.0 * -149.99999928124808 - -299.9953393447313) = -299.99580145510254
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.99580145510254
+
+
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99999928124808
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99999928124808
+Alpha: 0.09916666666666674
+
+Reward: -150
+-149.99999928124808 + 0.09916666666666674 * (-150 - -149.99999928124808) = -149.9999993525243
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.9999993525243
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 0, Fixing error 27: An operation with void return type must have an upper bound of 1 not 93
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.99580145510254
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 401
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.99580145510254
+Alpha: 0.06000000000000005
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.9999993525243
+-299.99580145510254 + 0.06000000000000005 * (-150 + 1.0 * -149.9999993525243 - -299.99580145510254) = -299.9960533289478
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action 99999 delete to new weight -299.9960533289478
+
+
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 1, Fixing error 401: The typed element must have a type
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.9999993525243
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.9999993525243
+Alpha: 0.06000000000000005
+
+Reward: -150
+-149.9999993525243 + 0.06000000000000005 * (-150 - -149.9999993525243) = -149.99999939137285
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight -149.99999939137285
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Time repairing model: 3633 ms
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: 
+-----------------ALL SEQUENCES FOUND-------------------
+SIZE: 16
+DISCARDED SEQUENCES: 9
+--------::::B E S T   S E Q U E N C E   I S::::---------
+Sequence [id=0, seq=[ErrorAction [Error: 27 An operation with void return type must have an upper bound of 1 not 93, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+], weight=-300.0]
+
+ with 2 actions.
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:01:59 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml

@@ -1,0 +1,578 @@
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Repairing e12.ecore
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Running with preferences [1, 3, 6]
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initial number of errors in model: 2
+Maximum number of steps per episode: 20
+Errors to fix: [Error 442, message=The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+, Error 27, message=An operation with void return type must have an upper bound of 1 not 31
+]
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initializing Q-table for the errors.
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Number of episodes: 25
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -285.6412091448933
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -285.6412091448933
+Alpha: 1.0
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -149.15943329538035
+-285.6412091448933 + 1.0 * (-150 + 1.0 * -149.15943329538035 - -285.6412091448933) = -299.1594332953804
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 1614867400 setName to new weight -299.1594332953804
+
+
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 31
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -149.15943329538035
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.15943329538035
+Alpha: 1.0
+
+Reward: -150
+-149.15943329538035 + 1.0 * (-150 - -149.15943329538035) = -150.0
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -150.0
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:13:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 600.0
+apr. 11, 2020 3:13:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 600.0
+Alpha: 0.9608333333333333
+
+Reward: 0
+600.0 + 0.9608333333333333 * (0 - 600.0) = 23.5
+apr. 11, 2020 3:13:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 23.5
+apr. 11, 2020 3:13:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 23.5
+apr. 11, 2020 3:13:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 23.5
+Alpha: 0.9216666666666666
+
+Reward: 0
+23.5 + 0.9216666666666666 * (0 - 23.5) = 1.8408333333333324
+apr. 11, 2020 3:13:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 1.8408333333333324
+apr. 11, 2020 3:13:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1.8408333333333324
+apr. 11, 2020 3:13:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.8408333333333324
+Alpha: 0.8825000000000001
+
+Reward: 0
+1.8408333333333324 + 0.8825000000000001 * (0 - 1.8408333333333324) = 0.21629791666666653
+apr. 11, 2020 3:13:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 0.21629791666666653
+apr. 11, 2020 3:13:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.21629791666666653
+apr. 11, 2020 3:13:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.21629791666666653
+Alpha: 0.8433333333333334
+
+Reward: 0
+0.21629791666666653 + 0.8433333333333334 * (0 - 0.21629791666666653) = 0.033886673611111084
+apr. 11, 2020 3:13:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 0.033886673611111084
+apr. 11, 2020 3:13:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.033886673611111084
+apr. 11, 2020 3:13:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.033886673611111084
+Alpha: 0.8041666666666667
+
+Reward: 0
+0.033886673611111084 + 0.8041666666666667 * (0 - 0.033886673611111084) = 0.006636140248842588
+apr. 11, 2020 3:13:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 0.006636140248842588
+apr. 11, 2020 3:13:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.006636140248842588
+apr. 11, 2020 3:13:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.006636140248842588
+Alpha: 0.765
+
+Reward: 0
+0.006636140248842588 + 0.765 * (0 - 0.006636140248842588) = 0.001559492958478008
+apr. 11, 2020 3:13:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 0.001559492958478008
+apr. 11, 2020 3:13:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.001559492958478008
+apr. 11, 2020 3:13:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.001559492958478008
+Alpha: 0.7258333333333333
+
+Reward: 0
+0.001559492958478008 + 0.7258333333333333 * (0 - 0.001559492958478008) = 4.2756098611605384E-4
+apr. 11, 2020 3:13:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 4.2756098611605384E-4
+apr. 11, 2020 3:13:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:13:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 4.2756098611605384E-4
+apr. 11, 2020 3:13:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 4.2756098611605384E-4
+Alpha: 0.6866666666666668
+
+Reward: 0
+4.2756098611605384E-4 + 0.6866666666666668 * (0 - 4.2756098611605384E-4) = 1.3396910898303018E-4
+apr. 11, 2020 3:13:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 1.3396910898303018E-4
+apr. 11, 2020 3:13:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1.3396910898303018E-4
+apr. 11, 2020 3:13:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.3396910898303018E-4
+Alpha: 0.6475
+
+Reward: 0
+1.3396910898303018E-4 + 0.6475 * (0 - 1.3396910898303018E-4) = 4.722411091651814E-5
+apr. 11, 2020 3:13:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 4.722411091651814E-5
+apr. 11, 2020 3:13:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 4.722411091651814E-5
+apr. 11, 2020 3:13:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 4.722411091651814E-5
+Alpha: 0.6083333333333334
+
+Reward: 0
+4.722411091651814E-5 + 0.6083333333333334 * (0 - 4.722411091651814E-5) = 1.84961101089696E-5
+apr. 11, 2020 3:13:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 1.84961101089696E-5
+apr. 11, 2020 3:13:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:13:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1.84961101089696E-5
+apr. 11, 2020 3:13:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.84961101089696E-5
+Alpha: 0.5691666666666666
+
+Reward: 0
+1.84961101089696E-5 + 0.5691666666666666 * (0 - 1.84961101089696E-5) = 7.968740771947737E-6
+apr. 11, 2020 3:13:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 7.968740771947737E-6
+apr. 11, 2020 3:13:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 7.968740771947737E-6
+apr. 11, 2020 3:13:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 7.968740771947737E-6
+Alpha: 0.53
+
+Reward: 0
+7.968740771947737E-6 + 0.53 * (0 - 7.968740771947737E-6) = 3.745308162815436E-6
+apr. 11, 2020 3:13:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 3.745308162815436E-6
+apr. 11, 2020 3:13:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 3.745308162815436E-6
+apr. 11, 2020 3:13:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 3.745308162815436E-6
+Alpha: 0.49083333333333334
+
+Reward: 0
+3.745308162815436E-6 + 0.49083333333333334 * (0 - 3.745308162815436E-6) = 1.906986072900193E-6
+apr. 11, 2020 3:13:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 1.906986072900193E-6
+apr. 11, 2020 3:13:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1.906986072900193E-6
+apr. 11, 2020 3:13:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.906986072900193E-6
+Alpha: 0.45166666666666666
+
+Reward: 0
+1.906986072900193E-6 + 0.45166666666666666 * (0 - 1.906986072900193E-6) = 1.0456640299736058E-6
+apr. 11, 2020 3:13:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 1.0456640299736058E-6
+apr. 11, 2020 3:13:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:13:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1.0456640299736058E-6
+apr. 11, 2020 3:13:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.0456640299736058E-6
+Alpha: 0.4125
+
+Reward: 0
+1.0456640299736058E-6 + 0.4125 * (0 - 1.0456640299736058E-6) = 6.143276176094935E-7
+apr. 11, 2020 3:13:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 6.143276176094935E-7
+apr. 11, 2020 3:13:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 6.143276176094935E-7
+apr. 11, 2020 3:13:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 6.143276176094935E-7
+Alpha: 0.3733333333333334
+
+Reward: 0
+6.143276176094935E-7 + 0.3733333333333334 * (0 - 6.143276176094935E-7) = 3.8497864036861586E-7
+apr. 11, 2020 3:13:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 3.8497864036861586E-7
+apr. 11, 2020 3:13:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 3.8497864036861586E-7
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 3.8497864036861586E-7
+Alpha: 0.3341666666666667
+
+Reward: 0
+3.8497864036861586E-7 + 0.3341666666666667 * (0 - 3.8497864036861586E-7) = 2.5633161137877004E-7
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 2.5633161137877004E-7
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -299.1594332953804
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 27
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.1594332953804
+Alpha: 0.29500000000000004
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -150.0
+-299.1594332953804 + 0.29500000000000004 * (-150 + 1.0 * -150.0 - -299.1594332953804) = -299.4074004732432
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 1614867400 setName to new weight -299.4074004732432
+
+
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 1, Fixing error 27: An operation with void return type must have an upper bound of 1 not 31
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight -150.0
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.29500000000000004
+
+Reward: -150
+-150.0 + 0.29500000000000004 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 27, context 0, action -969028598 setUpperBound to new weight -150.0
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18 TOTAL REWARD -300
+
+
+
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 2.5633161137877004E-7
+apr. 11, 2020 3:13:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 2.5633161137877004E-7
+Alpha: 0.25583333333333336
+
+Reward: 0
+2.5633161137877004E-7 + 0.25583333333333336 * (0 - 2.5633161137877004E-7) = 1.9075344080103469E-7
+apr. 11, 2020 3:13:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 1.9075344080103469E-7
+apr. 11, 2020 3:13:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1.9075344080103469E-7
+apr. 11, 2020 3:13:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.9075344080103469E-7
+Alpha: 0.21666666666666679
+
+Reward: 0
+1.9075344080103469E-7 + 0.21666666666666679 * (0 - 1.9075344080103469E-7) = 1.4942352862747715E-7
+apr. 11, 2020 3:13:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 1.4942352862747715E-7
+apr. 11, 2020 3:13:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1.4942352862747715E-7
+apr. 11, 2020 3:13:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.4942352862747715E-7
+Alpha: 0.1775000000000001
+
+Reward: 0
+1.4942352862747715E-7 + 0.1775000000000001 * (0 - 1.4942352862747715E-7) = 1.2290085229609994E-7
+apr. 11, 2020 3:13:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 1.2290085229609994E-7
+apr. 11, 2020 3:13:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:13:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1.2290085229609994E-7
+apr. 11, 2020 3:13:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.2290085229609994E-7
+Alpha: 0.1383333333333333
+
+Reward: 0
+1.2290085229609994E-7 + 0.1383333333333333 * (0 - 1.2290085229609994E-7) = 1.0589956772847279E-7
+apr. 11, 2020 3:13:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 1.0589956772847279E-7
+apr. 11, 2020 3:13:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 1.0589956772847279E-7
+apr. 11, 2020 3:13:50 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.0589956772847279E-7
+Alpha: 0.09916666666666674
+
+Reward: 0
+1.0589956772847279E-7 + 0.09916666666666674 * (0 - 1.0589956772847279E-7) = 9.539786059539923E-8
+apr. 11, 2020 3:13:50 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 9.539786059539923E-8
+apr. 11, 2020 3:13:50 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:50 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 0, Fixing error 442: The name '_jgs-sCloEempX9vgdEICPQ' is not well formed
+apr. 11, 2020 3:13:50 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:13:50 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 9.539786059539923E-8
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 9.539786059539923E-8
+Alpha: 0.06000000000000005
+
+Reward: 0
+9.539786059539923E-8 + 0.06000000000000005 * (0 - 9.539786059539923E-8) = 8.967398895967528E-8
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 442, context 0, action 99999 delete to new weight 8.967398895967528E-8
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Time repairing model: 24649 ms
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: 
+-----------------ALL SEQUENCES FOUND-------------------
+SIZE: 2
+DISCARDED SEQUENCES: 23
+--------::::B E S T   S E Q U E N C E   I S::::---------
+Sequence [id=1, seq=[ErrorAction [Error: 442 The name '_jgs-sCloEempX9vgdEICPQ' is not well formed, Action: delete, Error hierarchy: 0]
+], weight=0.0]
+
+ with 1 actions.
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:13:51 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml

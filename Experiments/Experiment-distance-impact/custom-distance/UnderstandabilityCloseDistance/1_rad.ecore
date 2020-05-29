@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="rad" nsURI="htpp://napoleondynamite.preston" nsPrefix="napoleon">
+  <eClassifiers xsi:type="ecore:EClass" name="Posao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="se_sastoji_od" ordered="false"
+        upperBound="-1" eType="#//Posao" containment="true" eOpposite="#//Posao/opposite_se_sastoji_od"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="opposite_se_sastoji_od"
+        ordered="false" eType="#//Posao" transient="true" eOpposite="#//Posao/se_sastoji_od"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="opposite_radi_na" ordered="false"
+        eType="#//Angazovani" eOpposite="#//Angazovani/radi_na"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="opposite_nadgleda" ordered="false"
+        eType="#//Fakultet" eOpposite="#//Fakultet/nadgleda"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="naziv" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pocetak" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="kraj" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Angazovani" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="radi_na" ordered="false"
+        upperBound="-1" eType="#//Posao" eOpposite="#//Posao/opposite_radi_na"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prezime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uloga" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pol" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VisokoObrazovan" eSuperTypes="#//Angazovani">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="naziv_skole" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stepen" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fizikalac" eSuperTypes="#//Angazovani">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="placeholder8554741" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fakultet" eSuperTypes="#//VisokoObrazovan">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nadgleda" ordered="false"
+        eType="#//Posao" eOpposite="#//Posao/opposite_nadgleda"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VisaSkola" eSuperTypes="#//VisokoObrazovan"/>
+</ecore:EPackage>

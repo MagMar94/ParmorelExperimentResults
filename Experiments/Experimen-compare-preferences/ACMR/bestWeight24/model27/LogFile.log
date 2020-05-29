@@ -1,0 +1,1189 @@
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Repairing XBNFwithCardinality.ecore
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Running with preferences [REPAIR_HIGH_IN_CONTEXT_HIERARCHY, PUNISH_DELETION]
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleUnsupportedErrors
+WARNING: The error code 1 for the error The required feature 'eReferenceType' of 'org.eclipse.emf.ecore.impl.EReferenceImpl@5483d5ba{file:/Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/././differentSelectionMethodsOriginals/XBNFwithCardinality.ecore#//CompoundElement/elements}' must be set is not supported.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initial number of errors in model: 2
+Maximum number of steps per episode: 20
+Errors to fix: [Error 401, message=The typed element must have a type
+, Error 50, message=A containment or bidirectional reference must be unique if its upper bound is different from 1
+]
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initializing Q-table for the errors.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Number of episodes: 25
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 800.0737806410762
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 800.0737806410762
+Alpha: 1.0
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 23639.18876406412
+800.0737806410762 + 1.0 * (100 + 1.0 * 23639.18876406412 - 800.0737806410762) = 23739.18876406412
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 23739.18876406412
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 23639.18876406412
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 23639.18876406412
+Alpha: 1.0
+
+Reward: 100
+23639.18876406412 + 1.0 * (100 - 23639.18876406412) = 100.0
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action -969028598 setUpperBound to new weight 100.0
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution added to possible solitons: [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+]
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 23739.18876406412
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 23739.18876406412
+Alpha: 0.9608333333333333
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 20841.702567202363
+23739.18876406412 + 0.9608333333333333 * (100 + 1.0 * 20841.702567202363 - 23739.18876406412) = 21051.270776579448
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 21051.270776579448
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 20841.702567202363
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 20841.702567202363
+Alpha: 0.9608333333333333
+
+Reward: 100
+20841.702567202363 + 0.9608333333333333 * (100 - 20841.702567202363) = 912.3833505487601
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 912.3833505487601
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 21051.270776579448
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 21051.270776579448
+Alpha: 0.9216666666666666
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 18592.09864307387
+21051.270776579448 + 0.9216666666666666 * (100 + 1.0 * 18592.09864307387 - 21051.270776579448) = 18876.900460198474
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 18876.900460198474
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 18592.09864307387
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 18592.09864307387
+Alpha: 0.9216666666666666
+
+Reward: 100
+18592.09864307387 + 0.9216666666666666 * (100 - 18592.09864307387) = 1548.5477270407864
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 1548.5477270407864
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 18876.900460198474
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 18876.900460198474
+Alpha: 0.8825000000000001
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 1548.5477270407864
+18876.900460198474 + 0.8825000000000001 * (100 + 1.0 * 1548.5477270407864 - 18876.900460198474) = 3672.879173186813
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 3672.879173186813
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 1548.5477270407864
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1548.5477270407864
+Alpha: 0.8825000000000001
+
+Reward: 100
+1548.5477270407864 + 0.8825000000000001 * (100 - 1548.5477270407864) = 270.2043579272922
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 270.2043579272922
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -740.6813715599808
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -740.6813715599808
+Alpha: 0.8433333333333334
+Gamma: 1.0
+Reward: -1000
+Next optimal action Q-value: 912.3833505487601
+-740.6813715599808 + 0.8433333333333334 * (-1000 + 1.0 * 912.3833505487601 - -740.6813715599808) = -189.93012258160934
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 99999 delete to new weight -189.93012258160934
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 270.2043579272922
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 270.2043579272922
+Alpha: 0.8433333333333334
+
+Reward: 100
+270.2043579272922 + 0.8433333333333334 * (100 - 270.2043579272922) = 126.6653494086091
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 126.6653494086091
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4 TOTAL REWARD -900
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -189.93012258160934
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -189.93012258160934
+Alpha: 0.8041666666666667
+Gamma: 1.0
+Reward: -1000
+Next optimal action Q-value: 912.3833505487601
+-189.93012258160934 + 0.8041666666666667 * (-1000 + 1.0 * 912.3833505487601 - -189.93012258160934) = -107.6530379392706
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 99999 delete to new weight -107.6530379392706
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -400.0
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -400.0
+Alpha: 0.8041666666666667
+
+Reward: -1000
+-400.0 + 0.8041666666666667 * (-1000 - -400.0) = -882.5
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 99999 delete to new weight -882.5
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: delete, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5 TOTAL REWARD -2000
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 3672.879173186813
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 3672.879173186813
+Alpha: 0.765
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 912.3833505487601
+3672.879173186813 + 0.765 * (100 + 1.0 * 912.3833505487601 - 3672.879173186813) = 1637.5998688687025
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 1637.5998688687025
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 912.3833505487601
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 912.3833505487601
+Alpha: 0.765
+
+Reward: 100
+912.3833505487601 + 0.765 * (100 - 912.3833505487601) = 290.91008737895856
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 290.91008737895856
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 1637.5998688687025
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1637.5998688687025
+Alpha: 0.7258333333333333
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 290.91008737895856
+1637.5998688687025 + 0.7258333333333333 * (100 + 1.0 * 290.91008737895856 - 1637.5998688687025) = 732.7108691373968
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 732.7108691373968
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 290.91008737895856
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 290.91008737895856
+Alpha: 0.7258333333333333
+
+Reward: 100
+290.91008737895856 + 0.7258333333333333 * (100 - 290.91008737895856) = 152.34118228973114
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 152.34118228973114
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 732.7108691373968
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 732.7108691373968
+Alpha: 0.6866666666666668
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 152.34118228973114
+732.7108691373968 + 0.6866666666666668 * (100 + 1.0 * 152.34118228973114 - 732.7108691373968) = 402.8570175019997
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 402.8570175019997
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 152.34118228973114
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 152.34118228973114
+Alpha: 0.6866666666666668
+
+Reward: 100
+152.34118228973114 + 0.6866666666666668 * (100 - 152.34118228973114) = 116.40023711744908
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 116.40023711744908
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -107.6530379392706
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -107.6530379392706
+Alpha: 0.6475
+Gamma: 1.0
+Reward: -1000
+Next optimal action Q-value: 126.6653494086091
+-107.6530379392706 + 0.6475 * (-1000 + 1.0 * 126.6653494086091 - -107.6530379392706) = -603.4318821315185
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 99999 delete to new weight -603.4318821315185
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 126.6653494086091
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 126.6653494086091
+Alpha: 0.6475
+
+Reward: 100
+126.6653494086091 + 0.6475 * (100 - 126.6653494086091) = 109.39953566653472
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 109.39953566653472
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9 TOTAL REWARD -900
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 402.8570175019997
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 402.8570175019997
+Alpha: 0.6083333333333334
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 116.40023711744908
+402.8570175019997 + 0.6083333333333334 * (100 + 1.0 * 116.40023711744908 - 402.8570175019997) = 289.4291427680647
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 289.4291427680647
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 116.40023711744908
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 116.40023711744908
+Alpha: 0.6083333333333334
+
+Reward: 100
+116.40023711744908 + 0.6083333333333334 * (100 - 116.40023711744908) = 106.42342620433422
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 106.42342620433422
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 289.4291427680647
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 289.4291427680647
+Alpha: 0.5691666666666666
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 109.39953566653472
+289.4291427680647 + 0.5691666666666666 * (100 + 1.0 * 109.39953566653472 - 289.4291427680647) = 243.8789580594439
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 243.8789580594439
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 109.39953566653472
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 109.39953566653472
+Alpha: 0.5691666666666666
+
+Reward: 100
+109.39953566653472 + 0.5691666666666666 * (100 - 109.39953566653472) = 104.04963328299871
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 104.04963328299871
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 243.8789580594439
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 243.8789580594439
+Alpha: 0.53
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 106.42342620433422
+243.8789580594439 + 0.53 * (100 + 1.0 * 106.42342620433422 - 243.8789580594439) = 224.02752617623577
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 224.02752617623577
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 106.42342620433422
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 106.42342620433422
+Alpha: 0.53
+
+Reward: 100
+106.42342620433422 + 0.53 * (100 - 106.42342620433422) = 103.01901031603708
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 103.01901031603708
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -603.4318821315185
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -603.4318821315185
+Alpha: 0.49083333333333334
+Gamma: 1.0
+Reward: -1000
+Next optimal action Q-value: 104.04963328299871
+-603.4318821315185 + 0.49083333333333334 * (-1000 + 1.0 * 104.04963328299871 - -603.4318821315185) = -747.0097049822264
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 99999 delete to new weight -747.0097049822264
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 103.01901031603708
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 103.01901031603708
+Alpha: 0.49083333333333334
+
+Reward: 100
+103.01901031603708 + 0.49083333333333334 * (100 - 103.01901031603708) = 101.53717941924889
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 101.53717941924889
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13 TOTAL REWARD -900
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -747.0097049822264
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -747.0097049822264
+Alpha: 0.45166666666666666
+Gamma: 1.0
+Reward: -1000
+Next optimal action Q-value: 104.04963328299871
+-747.0097049822264 + 0.45166666666666666 * (-1000 + 1.0 * 104.04963328299871 - -747.0097049822264) = -814.2812371990997
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 99999 delete to new weight -814.2812371990997
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 104.04963328299871
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 104.04963328299871
+Alpha: 0.45166666666666666
+
+Reward: 100
+104.04963328299871 + 0.45166666666666666 * (100 - 104.04963328299871) = 102.2205489168443
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 102.2205489168443
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14 TOTAL REWARD -900
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 224.02752617623577
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 224.02752617623577
+Alpha: 0.4125
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 102.2205489168443
+224.02752617623577 + 0.4125 * (100 + 1.0 * 102.2205489168443 - 224.02752617623577) = 215.0321480567368
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 215.0321480567368
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 102.2205489168443
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 102.2205489168443
+Alpha: 0.4125
+
+Reward: 100
+102.2205489168443 + 0.4125 * (100 - 102.2205489168443) = 101.30457248864602
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 101.30457248864602
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -814.2812371990997
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -814.2812371990997
+Alpha: 0.3733333333333334
+Gamma: 1.0
+Reward: -1000
+Next optimal action Q-value: 101.53717941924889
+-814.2812371990997 + 0.3733333333333334 * (-1000 + 1.0 * 101.53717941924889 - -814.2812371990997) = -845.7090283282496
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 99999 delete to new weight -845.7090283282496
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 101.53717941924889
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 101.53717941924889
+Alpha: 0.3733333333333334
+
+Reward: 100
+101.53717941924889 + 0.3733333333333334 * (100 - 101.53717941924889) = 100.96329910272931
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 100.96329910272931
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16 TOTAL REWARD -900
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 215.0321480567368
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 215.0321480567368
+Alpha: 0.3341666666666667
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 101.30457248864602
+215.0321480567368 + 0.3341666666666667 * (100 + 1.0 * 101.30457248864602 - 215.0321480567368) = 210.4448498877331
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 210.4448498877331
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 101.30457248864602
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 101.30457248864602
+Alpha: 0.3341666666666667
+
+Reward: 100
+101.30457248864602 + 0.3341666666666667 * (100 - 101.30457248864602) = 100.86862784869014
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 100.86862784869014
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 210.4448498877331
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 210.4448498877331
+Alpha: 0.29500000000000004
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.96329910272931
+210.4448498877331 + 0.29500000000000004 * (100 + 1.0 * 100.96329910272931 - 210.4448498877331) = 207.64779240615698
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 207.64779240615698
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 100.96329910272931
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.96329910272931
+Alpha: 0.29500000000000004
+
+Reward: 100
+100.96329910272931 + 0.29500000000000004 * (100 - 100.96329910272931) = 100.67912586742416
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 100.67912586742416
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 207.64779240615698
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 207.64779240615698
+Alpha: 0.25583333333333336
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.86862784869014
+207.64779240615698 + 0.25583333333333336 * (100 + 1.0 * 100.86862784869014 - 207.64779240615698) = 205.91345614020506
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 205.91345614020506
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 100.86862784869014
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.86862784869014
+Alpha: 0.25583333333333336
+
+Reward: 100
+100.86862784869014 + 0.25583333333333336 * (100 - 100.86862784869014) = 100.64640389073358
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 100.64640389073358
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 205.91345614020506
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 205.91345614020506
+Alpha: 0.21666666666666679
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.67912586742416
+205.91345614020506 + 0.21666666666666679 * (100 + 1.0 * 100.67912586742416 - 205.91345614020506) = 204.7793512477692
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 204.7793512477692
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 100.64640389073358
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.64640389073358
+Alpha: 0.21666666666666679
+
+Reward: 100
+100.64640389073358 + 0.21666666666666679 * (100 - 100.64640389073358) = 100.50634971440797
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 100.50634971440797
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 204.7793512477692
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 204.7793512477692
+Alpha: 0.1775000000000001
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.67912586742416
+204.7793512477692 + 0.1775000000000001 * (100 + 1.0 * 100.67912586742416 - 204.7793512477692) = 204.05156124275794
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 204.05156124275794
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 100.50634971440797
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.50634971440797
+Alpha: 0.1775000000000001
+
+Reward: 100
+100.50634971440797 + 0.1775000000000001 * (100 - 100.50634971440797) = 100.41647264010057
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight 100.41647264010057
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 204.05156124275794
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 204.05156124275794
+Alpha: 0.1383333333333333
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.67912586742416
+204.05156124275794 + 0.1383333333333333 * (100 + 1.0 * 100.67912586742416 - 204.05156124275794) = 203.58504101583677
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 203.58504101583677
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 100.67912586742416
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.67912586742416
+Alpha: 0.1383333333333333
+
+Reward: 100
+100.67912586742416 + 0.1383333333333333 * (100 - 100.67912586742416) = 100.58518012243049
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 100.58518012243049
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 203.58504101583677
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 203.58504101583677
+Alpha: 0.09916666666666674
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.58518012243049
+203.58504101583677 + 0.09916666666666674 * (100 + 1.0 * 100.58518012243049 - 203.58504101583677) = 203.28755481057397
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 203.28755481057397
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 100.58518012243049
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.58518012243049
+Alpha: 0.09916666666666674
+
+Reward: 100
+100.58518012243049 + 0.09916666666666674 * (100 - 100.58518012243049) = 100.52714976028946
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 100.52714976028946
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 0, Fixing error 401: The typed element must have a type
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 203.28755481057397
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 50
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 203.28755481057397
+Alpha: 0.06000000000000005
+Gamma: 1.0
+Reward: 100
+Next optimal action Q-value: 100.52714976028946
+203.28755481057397 + 0.06000000000000005 * (100 + 1.0 * 100.52714976028946 - 203.28755481057397) = 203.1219305075569
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 401, context 0, action 591449609 setEType to new weight 203.1219305075569
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 1, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 100.52714976028946
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 100.52714976028946
+Alpha: 0.06000000000000005
+
+Reward: 100
+100.52714976028946 + 0.06000000000000005 * (100 - 100.52714976028946) = 100.49552077467209
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 100.49552077467209
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+] already exists.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: Solution discarded.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24 TOTAL REWARD 200
+
+
+
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Time repairing model: 316 ms
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: 
+-----------------ALL SEQUENCES FOUND-------------------
+SIZE: 1
+DISCARDED SEQUENCES: 24
+--------::::B E S T   S E Q U E N C E   I S::::---------
+Sequence [id=0, seq=[ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+], weight=200.0]
+
+ with 2 actions.
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 17, 2020 1:17:17 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml

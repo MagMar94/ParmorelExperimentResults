@@ -1,0 +1,2044 @@
+apr. 11, 2020 3:10:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Repairing c3.ecore
+apr. 11, 2020 3:10:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Running with preferences [1, 3, 6]
+apr. 11, 2020 3:10:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initial number of errors in model: 5
+Maximum number of steps per episode: 20
+Errors to fix: [Error 40, message=The typed element must have a type
+, Error 40, message=The typed element must have a type
+, Error 40, message=The typed element must have a type
+, Error 38, message=The default value literal 'false' must be a valid literal of the attribute's type
+, Error 443, message=The name 'null' is not well formed
+]
+apr. 11, 2020 3:10:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initializing Q-table for the errors.
+apr. 11, 2020 3:10:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Number of episodes: 25
+apr. 11, 2020 3:10:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:24 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 450.0
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 450.0
+Alpha: 1.0
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: 450.0
+450.0 + 1.0 * (-150 + 1.0 * 450.0 - 450.0) = 300.0
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight 300.0
+
+
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 300.0
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 300.0
+Alpha: 1.0
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: 300.0
+300.0 + 1.0 * (-150 + 1.0 * 300.0 - 300.0) = 150.0
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight 150.0
+
+
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -149.99999999076957
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -149.99999999076957
+Alpha: 1.0
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 300.0044348868111
+-149.99999999076957 + 1.0 * (0 + 1.0 * 300.0044348868111 - -149.99999999076957) = 300.00443488681117
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 300.00443488681117
+
+
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight 300.0044348868111
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 300.0044348868111
+Alpha: 1.0
+
+Reward: -150
+300.0044348868111 + 1.0 * (-150 - 300.0044348868111) = -150.0
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 300.00443488681117
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 300.00443488681117
+Alpha: 0.9608333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: 300.00443488681117
+300.00443488681117 + 0.9608333333333333 * (-150 + 1.0 * 300.00443488681117 - 300.00443488681117) = 155.87943488681117
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 155.87943488681117
+
+
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 155.87943488681117
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 155.87943488681117
+Alpha: 0.9608333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: 155.87943488681117
+155.87943488681117 + 0.9608333333333333 * (-150 + 1.0 * 155.87943488681117 - 155.87943488681117) = 11.754434886811168
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 11.754434886811168
+
+
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:25 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 150.0
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 150.0
+Alpha: 0.9608333333333333
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+150.0 + 0.9608333333333333 * (0 + 1.0 * -150.0 - 150.0) = -138.25
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -138.25
+
+
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.9608333333333333
+
+Reward: -150
+-150.0 + 0.9608333333333333 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:26 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -138.25
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -138.25
+Alpha: 0.9216666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: 11.754434886811168
+-138.25 + 0.9216666666666666 * (-150 + 1.0 * 11.754434886811168 - -138.25) = -138.2459125126557
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -138.2459125126557
+
+
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 11.754434886811168
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 11.754434886811168
+Alpha: 0.9216666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: 11.754434886811168
+11.754434886811168 + 0.9216666666666666 * (-150 + 1.0 * 11.754434886811168 - 11.754434886811168) = -126.49556511318883
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -126.49556511318883
+
+
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -126.49556511318883
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -126.49556511318883
+Alpha: 0.9216666666666666
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-126.49556511318883 + 0.9216666666666666 * (0 + 1.0 * -150.0 - -126.49556511318883) = -148.1588192671998
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -148.1588192671998
+
+
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.9216666666666666
+
+Reward: -150
+-150.0 + 0.9216666666666666 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -138.2459125126557
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -138.2459125126557
+Alpha: 0.8825000000000001
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -138.2459125126557
+-138.2459125126557 + 0.8825000000000001 * (-150 + 1.0 * -138.2459125126557 - -138.2459125126557) = -270.6209125126557
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -270.6209125126557
+
+
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -148.1588192671998
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -148.1588192671998
+Alpha: 0.8825000000000001
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -148.1588192671998
+-148.1588192671998 + 0.8825000000000001 * (-150 + 1.0 * -148.1588192671998 - -148.1588192671998) = -280.53381926719976
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -280.53381926719976
+
+
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:27 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -270.6209125126557
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -270.6209125126557
+Alpha: 0.8825000000000001
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-270.6209125126557 + 0.8825000000000001 * (0 + 1.0 * -150.0 - -270.6209125126557) = -164.17295722023704
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -164.17295722023704
+
+
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.8825000000000001
+
+Reward: -150
+-150.0 + 0.8825000000000001 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -280.53381926719976
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -280.53381926719976
+Alpha: 0.8433333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -164.17295722023704
+-280.53381926719976 + 0.8433333333333334 * (-150 + 1.0 * -164.17295722023704 - -280.53381926719976) = -308.90282560759454
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -308.90282560759454
+
+
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:28 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -164.17295722023704
+apr. 11, 2020 3:10:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -164.17295722023704
+Alpha: 0.8433333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -164.17295722023704
+-164.17295722023704 + 0.8433333333333334 * (-150 + 1.0 * -164.17295722023704 - -164.17295722023704) = -290.67295722023704
+apr. 11, 2020 3:10:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -290.67295722023704
+
+
+apr. 11, 2020 3:10:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:29 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -290.67295722023704
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -290.67295722023704
+Alpha: 0.8433333333333334
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-290.67295722023704 + 0.8433333333333334 * (0 + 1.0 * -150.0 - -290.67295722023704) = -172.03876329783714
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -172.03876329783714
+
+
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.8433333333333334
+
+Reward: -150
+-150.0 + 0.8433333333333334 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -172.03876329783714
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -172.03876329783714
+Alpha: 0.8041666666666667
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -172.03876329783714
+-172.03876329783714 + 0.8041666666666667 * (-150 + 1.0 * -172.03876329783714 - -172.03876329783714) = -292.66376329783714
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -292.66376329783714
+
+
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:30 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -292.66376329783714
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -292.66376329783714
+Alpha: 0.8041666666666667
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -292.66376329783714
+-292.66376329783714 + 0.8041666666666667 * (-150 + 1.0 * -292.66376329783714 - -292.66376329783714) = -413.28876329783714
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -413.28876329783714
+
+
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -308.90282560759454
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -308.90282560759454
+Alpha: 0.8041666666666667
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-308.90282560759454 + 0.8041666666666667 * (0 + 1.0 * -150.0 - -308.90282560759454) = -181.1184700148206
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -181.1184700148206
+
+
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.8041666666666667
+
+Reward: -150
+-150.0 + 0.8041666666666667 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -181.1184700148206
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -181.1184700148206
+Alpha: 0.765
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -181.1184700148206
+-181.1184700148206 + 0.765 * (-150 + 1.0 * -181.1184700148206 - -181.1184700148206) = -295.86847001482056
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -295.86847001482056
+
+
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -295.86847001482056
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -295.86847001482056
+Alpha: 0.765
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -295.86847001482056
+-295.86847001482056 + 0.765 * (-150 + 1.0 * -295.86847001482056 - -295.86847001482056) = -410.61847001482056
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -410.61847001482056
+
+
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -410.61847001482056
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -410.61847001482056
+Alpha: 0.765
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-410.61847001482056 + 0.765 * (0 + 1.0 * -150.0 - -410.61847001482056) = -211.24534045348284
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -211.24534045348284
+
+
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.765
+
+Reward: -150
+-150.0 + 0.765 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -211.24534045348284
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -211.24534045348284
+Alpha: 0.7258333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -211.24534045348284
+-211.24534045348284 + 0.7258333333333333 * (-150 + 1.0 * -211.24534045348284 - -211.24534045348284) = -320.12034045348287
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -320.12034045348287
+
+
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -320.12034045348287
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -320.12034045348287
+Alpha: 0.7258333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -320.12034045348287
+-320.12034045348287 + 0.7258333333333333 * (-150 + 1.0 * -320.12034045348287 - -320.12034045348287) = -428.99534045348287
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -428.99534045348287
+
+
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:31 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -413.28876329783714
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -413.28876329783714
+Alpha: 0.7258333333333333
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-413.28876329783714 + 0.7258333333333333 * (0 + 1.0 * -150.0 - -413.28876329783714) = -222.185002604157
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -222.185002604157
+
+
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.7258333333333333
+
+Reward: -150
+-150.0 + 0.7258333333333333 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:32 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -222.185002604157
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -222.185002604157
+Alpha: 0.6866666666666668
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -222.185002604157
+-222.185002604157 + 0.6866666666666668 * (-150 + 1.0 * -222.185002604157 - -222.185002604157) = -325.18500260415703
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -325.18500260415703
+
+
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -325.18500260415703
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -325.18500260415703
+Alpha: 0.6866666666666668
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -325.18500260415703
+-325.18500260415703 + 0.6866666666666668 * (-150 + 1.0 * -325.18500260415703 - -325.18500260415703) = -428.18500260415703
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -428.18500260415703
+
+
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:33 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -428.18500260415703
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -428.18500260415703
+Alpha: 0.6866666666666668
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-428.18500260415703 + 0.6866666666666668 * (0 + 1.0 * -150.0 - -428.18500260415703) = -237.16463414930251
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -237.16463414930251
+
+
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.6866666666666668
+
+Reward: -150
+-150.0 + 0.6866666666666668 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:34 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -237.16463414930251
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -237.16463414930251
+Alpha: 0.6475
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -237.16463414930251
+-237.16463414930251 + 0.6475 * (-150 + 1.0 * -237.16463414930251 - -237.16463414930251) = -334.2896341493025
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -334.2896341493025
+
+
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -334.2896341493025
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -334.2896341493025
+Alpha: 0.6475
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -334.2896341493025
+-334.2896341493025 + 0.6475 * (-150 + 1.0 * -334.2896341493025 - -334.2896341493025) = -431.4146341493025
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -431.4146341493025
+
+
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -428.99534045348287
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -428.99534045348287
+Alpha: 0.6475
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-428.99534045348287 + 0.6475 * (0 + 1.0 * -150.0 - -428.99534045348287) = -248.34585750985272
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -248.34585750985272
+
+
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.6475
+
+Reward: -150
+-150.0 + 0.6475 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -248.34585750985272
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -248.34585750985272
+Alpha: 0.6083333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -248.34585750985272
+-248.34585750985272 + 0.6083333333333334 * (-150 + 1.0 * -248.34585750985272 - -248.34585750985272) = -339.59585750985275
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -339.59585750985275
+
+
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -339.59585750985275
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -339.59585750985275
+Alpha: 0.6083333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -339.59585750985275
+-339.59585750985275 + 0.6083333333333334 * (-150 + 1.0 * -339.59585750985275 - -339.59585750985275) = -430.84585750985275
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -430.84585750985275
+
+
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -430.84585750985275
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -430.84585750985275
+Alpha: 0.6083333333333334
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-430.84585750985275 + 0.6083333333333334 * (0 + 1.0 * -150.0 - -430.84585750985275) = -259.99796085802564
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -259.99796085802564
+
+
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.6083333333333334
+
+Reward: -150
+-150.0 + 0.6083333333333334 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -259.99796085802564
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -259.99796085802564
+Alpha: 0.5691666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -259.99796085802564
+-259.99796085802564 + 0.5691666666666666 * (-150 + 1.0 * -259.99796085802564 - -259.99796085802564) = -345.37296085802564
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -345.37296085802564
+
+
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:35 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -431.4146341493025
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -431.4146341493025
+Alpha: 0.5691666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -345.37296085802564
+-431.4146341493025 + 0.5691666666666666 * (-150 + 1.0 * -345.37296085802564 - -431.4146341493025) = -467.8175817676841
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -467.8175817676841
+
+
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -345.37296085802564
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -345.37296085802564
+Alpha: 0.5691666666666666
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-345.37296085802564 + 0.5691666666666666 * (0 + 1.0 * -150.0 - -345.37296085802564) = -234.17318396966607
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -234.17318396966607
+
+
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.5691666666666666
+
+Reward: -150
+-150.0 + 0.5691666666666666 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -234.17318396966607
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -234.17318396966607
+Alpha: 0.53
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -234.17318396966607
+-234.17318396966607 + 0.53 * (-150 + 1.0 * -234.17318396966607 - -234.17318396966607) = -313.67318396966607
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -313.67318396966607
+
+
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -313.67318396966607
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -313.67318396966607
+Alpha: 0.53
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -313.67318396966607
+-313.67318396966607 + 0.53 * (-150 + 1.0 * -313.67318396966607 - -313.67318396966607) = -393.17318396966607
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -393.17318396966607
+
+
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -393.17318396966607
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -393.17318396966607
+Alpha: 0.53
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-393.17318396966607 + 0.53 * (0 + 1.0 * -150.0 - -393.17318396966607) = -264.29139646574305
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -264.29139646574305
+
+
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.53
+
+Reward: -150
+-150.0 + 0.53 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -264.29139646574305
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -264.29139646574305
+Alpha: 0.49083333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -264.29139646574305
+-264.29139646574305 + 0.49083333333333334 * (-150 + 1.0 * -264.29139646574305 - -264.29139646574305) = -337.91639646574305
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -337.91639646574305
+
+
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -337.91639646574305
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -337.91639646574305
+Alpha: 0.49083333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -337.91639646574305
+-337.91639646574305 + 0.49083333333333334 * (-150 + 1.0 * -337.91639646574305 - -337.91639646574305) = -411.54139646574305
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -411.54139646574305
+
+
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -411.54139646574305
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -411.54139646574305
+Alpha: 0.49083333333333334
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-411.54139646574305 + 0.49083333333333334 * (0 + 1.0 * -150.0 - -411.54139646574305) = -283.1681610338075
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -283.1681610338075
+
+
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:36 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -299.9957234424524
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -299.9957234424524
+Alpha: 0.49083333333333334
+
+Reward: -150
+-299.9957234424524 + 0.49083333333333334 * (-150 - -299.9957234424524) = -226.37282251944868
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action 99999 delete to new weight -226.37282251944868
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -283.1681610338075
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -283.1681610338075
+Alpha: 0.45166666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -283.1681610338075
+-283.1681610338075 + 0.45166666666666666 * (-150 + 1.0 * -283.1681610338075 - -283.1681610338075) = -350.9181610338075
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -350.9181610338075
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -350.9181610338075
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -350.9181610338075
+Alpha: 0.45166666666666666
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -350.9181610338075
+-350.9181610338075 + 0.45166666666666666 * (-150 + 1.0 * -350.9181610338075 - -350.9181610338075) = -418.6681610338075
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -418.6681610338075
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -418.6681610338075
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -418.6681610338075
+Alpha: 0.45166666666666666
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-418.6681610338075 + 0.45166666666666666 * (0 + 1.0 * -150.0 - -418.6681610338075) = -297.31970830020447
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -297.31970830020447
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.45166666666666666
+
+Reward: -150
+-150.0 + 0.45166666666666666 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -297.31970830020447
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -297.31970830020447
+Alpha: 0.4125
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -297.31970830020447
+-297.31970830020447 + 0.4125 * (-150 + 1.0 * -297.31970830020447 - -297.31970830020447) = -359.19470830020447
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -359.19470830020447
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -359.19470830020447
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -359.19470830020447
+Alpha: 0.4125
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -359.19470830020447
+-359.19470830020447 + 0.4125 * (-150 + 1.0 * -359.19470830020447 - -359.19470830020447) = -421.06970830020447
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -421.06970830020447
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -421.06970830020447
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -421.06970830020447
+Alpha: 0.4125
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-421.06970830020447 + 0.4125 * (0 + 1.0 * -150.0 - -421.06970830020447) = -309.2534536263701
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -309.2534536263701
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.4125
+
+Reward: -150
+-150.0 + 0.4125 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -309.2534536263701
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -309.2534536263701
+Alpha: 0.3733333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -309.2534536263701
+-309.2534536263701 + 0.3733333333333334 * (-150 + 1.0 * -309.2534536263701 - -309.2534536263701) = -365.2534536263701
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -365.2534536263701
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -365.2534536263701
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -365.2534536263701
+Alpha: 0.3733333333333334
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -365.2534536263701
+-365.2534536263701 + 0.3733333333333334 * (-150 + 1.0 * -365.2534536263701 - -365.2534536263701) = -421.2534536263702
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -421.2534536263702
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -421.2534536263702
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -421.2534536263702
+Alpha: 0.3733333333333334
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-421.2534536263702 + 0.3733333333333334 * (0 + 1.0 * -150.0 - -421.2534536263702) = -319.98549760585865
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -319.98549760585865
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.3733333333333334
+
+Reward: -150
+-150.0 + 0.3733333333333334 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -319.98549760585865
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -319.98549760585865
+Alpha: 0.3341666666666667
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -319.98549760585865
+-319.98549760585865 + 0.3341666666666667 * (-150 + 1.0 * -319.98549760585865 - -319.98549760585865) = -370.11049760585865
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -370.11049760585865
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -370.11049760585865
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -370.11049760585865
+Alpha: 0.3341666666666667
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -370.11049760585865
+-370.11049760585865 + 0.3341666666666667 * (-150 + 1.0 * -370.11049760585865 - -370.11049760585865) = -420.23549760585865
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -420.23549760585865
+
+
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:37 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -467.8175817676841
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -467.8175817676841
+Alpha: 0.3341666666666667
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-467.8175817676841 + 0.3341666666666667 * (0 + 1.0 * -150.0 - -467.8175817676841) = -361.61353986031634
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -361.61353986031634
+
+
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.3341666666666667
+
+Reward: -150
+-150.0 + 0.3341666666666667 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -361.61353986031634
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -361.61353986031634
+Alpha: 0.29500000000000004
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -361.61353986031634
+-361.61353986031634 + 0.29500000000000004 * (-150 + 1.0 * -361.61353986031634 - -361.61353986031634) = -405.86353986031634
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -405.86353986031634
+
+
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -420.23549760585865
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -420.23549760585865
+Alpha: 0.29500000000000004
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -405.86353986031634
+-420.23549760585865 + 0.29500000000000004 * (-150 + 1.0 * -405.86353986031634 - -420.23549760585865) = -460.2457700709237
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -460.2457700709237
+
+
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:38 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -405.86353986031634
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -405.86353986031634
+Alpha: 0.29500000000000004
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-405.86353986031634 + 0.29500000000000004 * (0 + 1.0 * -150.0 - -405.86353986031634) = -330.383795601523
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -330.383795601523
+
+
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.29500000000000004
+
+Reward: -150
+-150.0 + 0.29500000000000004 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:39 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -330.383795601523
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -330.383795601523
+Alpha: 0.25583333333333336
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -330.383795601523
+-330.383795601523 + 0.25583333333333336 * (-150 + 1.0 * -330.383795601523 - -330.383795601523) = -368.758795601523
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -368.758795601523
+
+
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -460.2457700709237
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -460.2457700709237
+Alpha: 0.25583333333333336
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -368.758795601523
+-460.2457700709237 + 0.25583333333333336 * (-150 + 1.0 * -368.758795601523 - -460.2457700709237) = -475.2153524358353
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -475.2153524358353
+
+
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:40 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -368.758795601523
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -368.758795601523
+Alpha: 0.25583333333333336
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-368.758795601523 + 0.25583333333333336 * (0 + 1.0 * -150.0 - -368.758795601523) = -312.7930037268
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -312.7930037268
+
+
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.25583333333333336
+
+Reward: -150
+-150.0 + 0.25583333333333336 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -312.7930037268
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -312.7930037268
+Alpha: 0.21666666666666679
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -312.7930037268
+-312.7930037268 + 0.21666666666666679 * (-150 + 1.0 * -312.7930037268 - -312.7930037268) = -345.2930037268
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -345.2930037268
+
+
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:41 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -345.2930037268
+apr. 11, 2020 3:10:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -345.2930037268
+Alpha: 0.21666666666666679
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -345.2930037268
+-345.2930037268 + 0.21666666666666679 * (-150 + 1.0 * -345.2930037268 - -345.2930037268) = -377.7930037268
+apr. 11, 2020 3:10:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -377.7930037268
+
+
+apr. 11, 2020 3:10:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:42 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -377.7930037268
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -377.7930037268
+Alpha: 0.21666666666666679
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-377.7930037268 + 0.21666666666666679 * (0 + 1.0 * -150.0 - -377.7930037268) = -328.43785291932664
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -328.43785291932664
+
+
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.21666666666666679
+
+Reward: -150
+-150.0 + 0.21666666666666679 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:43 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -328.43785291932664
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -328.43785291932664
+Alpha: 0.1775000000000001
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -328.43785291932664
+-328.43785291932664 + 0.1775000000000001 * (-150 + 1.0 * -328.43785291932664 - -328.43785291932664) = -355.06285291932664
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -355.06285291932664
+
+
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -475.2153524358353
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -475.2153524358353
+Alpha: 0.1775000000000001
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -355.06285291932664
+-475.2153524358353 + 0.1775000000000001 * (-150 + 1.0 * -355.06285291932664 - -475.2153524358353) = -480.51328377165504
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -480.51328377165504
+
+
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -355.06285291932664
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -355.06285291932664
+Alpha: 0.1775000000000001
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-355.06285291932664 + 0.1775000000000001 * (0 + 1.0 * -150.0 - -355.06285291932664) = -318.66419652614616
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -318.66419652614616
+
+
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.1775000000000001
+
+Reward: -150
+-150.0 + 0.1775000000000001 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -480.51328377165504
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -480.51328377165504
+Alpha: 0.1383333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -318.66419652614616
+-480.51328377165504 + 0.1383333333333333 * (-150 + 1.0 * -318.66419652614616 - -480.51328377165504) = -478.8741600360263
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -478.8741600360263
+
+
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:44 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -318.66419652614616
+apr. 11, 2020 3:10:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -318.66419652614616
+Alpha: 0.1383333333333333
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -318.66419652614616
+-318.66419652614616 + 0.1383333333333333 * (-150 + 1.0 * -318.66419652614616 - -318.66419652614616) = -339.41419652614616
+apr. 11, 2020 3:10:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -339.41419652614616
+
+
+apr. 11, 2020 3:10:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:45 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -339.41419652614616
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -339.41419652614616
+Alpha: 0.1383333333333333
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-339.41419652614616 + 0.1383333333333333 * (0 + 1.0 * -150.0 - -339.41419652614616) = -313.2118993400293
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -313.2118993400293
+
+
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.1383333333333333
+
+Reward: -150
+-150.0 + 0.1383333333333333 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -313.2118993400293
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -313.2118993400293
+Alpha: 0.09916666666666674
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -313.2118993400293
+-313.2118993400293 + 0.09916666666666674 * (-150 + 1.0 * -313.2118993400293 - -313.2118993400293) = -328.0868993400293
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -328.0868993400293
+
+
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -478.8741600360263
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -478.8741600360263
+Alpha: 0.09916666666666674
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -328.0868993400293
+-478.8741600360263 + 0.09916666666666674 * (-150 + 1.0 * -328.0868993400293 - -478.8741600360263) = -478.7960900170066
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight -478.7960900170066
+
+
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:46 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -328.0868993400293
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -328.0868993400293
+Alpha: 0.09916666666666674
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-328.0868993400293 + 0.09916666666666674 * (0 + 1.0 * -150.0 - -328.0868993400293) = -310.4266151554764
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -310.4266151554764
+
+
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.09916666666666674
+
+Reward: -150
+-150.0 + 0.09916666666666674 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 0, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:47 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -310.4266151554764
+apr. 11, 2020 3:10:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -310.4266151554764
+Alpha: 0.06000000000000005
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -310.4266151554764
+-310.4266151554764 + 0.06000000000000005 * (-150 + 1.0 * -310.4266151554764 - -310.4266151554764) = -319.4266151554764
+apr. 11, 2020 3:10:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -319.4266151554764
+
+
+apr. 11, 2020 3:10:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:10:48 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -319.4266151554764
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -319.4266151554764
+Alpha: 0.06000000000000005
+Gamma: 1.0
+Reward: -150
+Next optimal action Q-value: -319.4266151554764
+-319.4266151554764 + 0.06000000000000005 * (-150 + 1.0 * -319.4266151554764 - -319.4266151554764) = -328.4266151554764
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -328.4266151554764
+
+
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 2, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -328.4266151554764
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 443
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -328.4266151554764
+Alpha: 0.06000000000000005
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: -150.0
+-328.4266151554764 + 0.06000000000000005 * (0 + 1.0 * -150.0 - -328.4266151554764) = -317.72101824614776
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight -317.72101824614776
+
+
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 3, Fixing error 443: The name 'null' is not well formed
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setName in context 0 with weight -150.0
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -150.0
+Alpha: 0.06000000000000005
+
+Reward: -150
+-150.0 + 0.06000000000000005 * (-150 - -150.0) = -150.0
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 443, context 0, action -801382182 setName to new weight -150.0
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24 TOTAL REWARD -450
+
+
+
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Time repairing model: 25408 ms
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: 
+-----------------ALL SEQUENCES FOUND-------------------
+SIZE: 19
+DISCARDED SEQUENCES: 6
+--------::::B E S T   S E Q U E N C E   I S::::---------
+Sequence [id=0, seq=[ErrorAction [Error: 40 The typed element must have a type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 40 The typed element must have a type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 40 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 443 The name 'null' is not well formed, Action: setName, Error hierarchy: 0]
+], weight=-450.0]
+
+ with 4 actions.
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:10:49 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml

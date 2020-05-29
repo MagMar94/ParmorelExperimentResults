@@ -1,0 +1,1473 @@
+mai 07, 2020 4:16:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Repairing GSML.ecore
+mai 07, 2020 4:16:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Running with preferences [PREFER_CLOSE_DISTANCE_TO_ORIGINAL, PREFER_UNDERSTANDABILITY]
+mai 07, 2020 4:16:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Initial number of errors in model: 1
+Maximum number of steps per episode: 12
+Errors to fix: [Error 32, message=There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme' in package 0
+]
+mai 07, 2020 4:16:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Initializing Q-table for the errors.
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Number of episodes: 25
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.0
+0.0 + 1.0 * (-2 + 1.0 * 0.0 - 0.0) = -2.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight -2.0
+
+
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.0 + 1.0 * (-2 + 1.0 - 0.0) = -1.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 99999 to new weight -1.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 11 ms
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -2.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-2.0 + 1.0 * (69 + 1.0 - -2.0) = 70.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 460 ms
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+]
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 0 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.7142857 + 1.0 * (-2 + 1.0 - 98.7142857) = -1.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 99999 to new weight -1.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 12 ms
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:16:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 438 ms
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 1 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.7142857 + 1.0 * (-2 + 1.0 - 98.7142857) = -1.0
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 99999 to new weight -1.0
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 12 ms
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 470 ms
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 2 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:16:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.7142857 + 1.0 * (-2 + 1.0 - 98.7142857) = -1.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 99999 to new weight -1.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 12 ms
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 441 ms
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 3 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.7142857 + 1.0 * (-2 + 1.0 - 98.7142857) = -1.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 99999 to new weight -1.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 10 ms
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:17:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 441 ms
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 4 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 0.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.0 + 1.0 * (-2 + 1.0 - 0.0) = -1.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight -1.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 11 ms
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight 70.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 464 ms
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+]
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 5 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 98.7142857
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.7142857 + 1.0 * (-2 + 1.0 - 98.7142857) = -1.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight -1.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 9 ms
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:17:01 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight 70.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 450 ms
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 6 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 98.7142857
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.7142857 + 1.0 * (-2 + 1.0 - 98.7142857) = -1.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight -1.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 10 ms
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight 70.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 465 ms
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 7 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 98.7142857
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.7142857 + 1.0 * (-2 + 1.0 - 98.7142857) = -1.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight -1.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 10 ms
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:17:02 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight 70.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 445 ms
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 8 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 98.7142857
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.7142857 + 1.0 * (-2 + 1.0 - 98.7142857) = -1.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight -1.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 9 ms
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight 70.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 445 ms
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 9 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 98.7142857
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.7142857 + 1.0 * (-2 + 1.0 - 98.7142857) = -1.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight -1.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 10 ms
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:17:03 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight 70.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 461 ms
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 10 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setName in context 2 with weight 0.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.0 + 1.0 * (-2 + 1.0 - 0.0) = -1.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action -801382182 to new weight -1.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 94.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 12 ms
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 94
+-1.0 + 1.0 * (94 + 1.0 - -1.0) = 95.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action -801382182 to new weight 95.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 457 ms
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: setName, Error hierarchy: 2]
+]
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 11 TOTAL REWARD 190.0
+
+
+
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setName in context 2 with weight 98.75
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.75
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.75 + 1.0 * (-2 + 1.0 - 98.75) = -1.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action -801382182 to new weight -1.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 94.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 12 ms
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 94
+-1.0 + 1.0 * (94 + 1.0 - -1.0) = 95.0
+mai 07, 2020 4:17:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action -801382182 to new weight 95.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 449 ms
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: setName, Error hierarchy: 2]
+] already exists.
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 12 TOTAL REWARD 190.0
+
+
+
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setName in context 2 with weight 98.75
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.75
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.75 + 1.0 * (-2 + 1.0 - 98.75) = -1.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action -801382182 to new weight -1.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 94.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 18 ms
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 94
+-1.0 + 1.0 * (94 + 1.0 - -1.0) = 95.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action -801382182 to new weight 95.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 457 ms
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: setName, Error hierarchy: 2]
+] already exists.
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 13 TOTAL REWARD 190.0
+
+
+
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 2 with weight 0.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.0 + 1.0 * (-2 + 1.0 - 0.0) = -1.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action 99999 to new weight -1.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 94.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 12 ms
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 94
+-1.0 + 1.0 * (94 + 1.0 - -1.0) = 95.0
+mai 07, 2020 4:17:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action 99999 to new weight 95.0
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 470 ms
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 2]
+]
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 14 TOTAL REWARD 190.0
+
+
+
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 2 with weight 98.75
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.75
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.75 + 1.0 * (-2 + 1.0 - 98.75) = -1.0
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action 99999 to new weight -1.0
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 94.0
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 12 ms
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 94
+-1.0 + 1.0 * (94 + 1.0 - -1.0) = 95.0
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action 99999 to new weight 95.0
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 483 ms
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 2]
+] already exists.
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 15 TOTAL REWARD 190.0
+
+
+
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setName in context 2 with weight 98.75
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.75
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.75 + 1.0 * (-2 + 1.0 - 98.75) = -1.0
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action -801382182 to new weight -1.0
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 94.0
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 11 ms
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 94
+-1.0 + 1.0 * (94 + 1.0 - -1.0) = 95.0
+mai 07, 2020 4:17:06 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action -801382182 to new weight 95.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 465 ms
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: setName, Error hierarchy: 2]
+] already exists.
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 16 TOTAL REWARD 190.0
+
+
+
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setName in context 1 with weight 0.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.0 + 1.0 * (-2 + 1.0 - 0.0) = -1.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 1, action -801382182 to new weight -1.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 89.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 10 ms
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 89
+-1.0 + 1.0 * (89 + 1.0 - -1.0) = 90.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 1, action -801382182 to new weight 90.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 454 ms
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: setName, Error hierarchy: 1]
+]
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 17 TOTAL REWARD 185.0
+
+
+
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setName in context 1 with weight 98.75
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.75
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.75 + 1.0 * (-2 + 1.0 - 98.75) = -1.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 1, action -801382182 to new weight -1.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 89.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 11 ms
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 89
+-1.0 + 1.0 * (89 + 1.0 - -1.0) = 90.0
+mai 07, 2020 4:17:07 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 1, action -801382182 to new weight 90.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 473 ms
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: setName, Error hierarchy: 1]
+] already exists.
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 18 TOTAL REWARD 185.0
+
+
+
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setName in context 1 with weight 98.75
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.75
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.75 + 1.0 * (-2 + 1.0 - 98.75) = -1.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 1, action -801382182 to new weight -1.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 89.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 12 ms
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 89
+-1.0 + 1.0 * (89 + 1.0 - -1.0) = 90.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 1, action -801382182 to new weight 90.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 455 ms
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: setName, Error hierarchy: 1]
+] already exists.
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 19 TOTAL REWARD 185.0
+
+
+
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 1 with weight 0.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.0 + 1.0 * (-2 + 1.0 - 0.0) = -1.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 1, action 99999 to new weight -1.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 94.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 11 ms
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 94
+-1.0 + 1.0 * (94 + 1.0 - -1.0) = 95.0
+mai 07, 2020 4:17:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 1, action 99999 to new weight 95.0
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 477 ms
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 1]
+]
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 20 TOTAL REWARD 190.0
+
+
+
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setName in context 1 with weight 98.75
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.75
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.75 + 1.0 * (-2 + 1.0 - 98.75) = -1.0
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 1, action -801382182 to new weight -1.0
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 89.0
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 11 ms
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 89
+-1.0 + 1.0 * (89 + 1.0 - -1.0) = 90.0
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 1, action -801382182 to new weight 90.0
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 454 ms
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: setName, Error hierarchy: 1]
+] already exists.
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 21 TOTAL REWARD 185.0
+
+
+
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 2 with weight 98.75
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.75
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.75 + 1.0 * (-2 + 1.0 - 98.75) = -1.0
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action 99999 to new weight -1.0
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 94.0
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 11 ms
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 94
+-1.0 + 1.0 * (94 + 1.0 - -1.0) = 95.0
+mai 07, 2020 4:17:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action 99999 to new weight 95.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 450 ms
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 2]
+] already exists.
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 22 TOTAL REWARD 190.0
+
+
+
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 2 with weight 98.75
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.75
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.75 + 1.0 * (-2 + 1.0 - 98.75) = -1.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action 99999 to new weight -1.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 94.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 11 ms
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 94
+-1.0 + 1.0 * (94 + 1.0 - -1.0) = 95.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 2, action 99999 to new weight 95.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.25
+Time to get metric: 471 ms
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 2]
+] already exists.
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 23 TOTAL REWARD 190.0
+
+
+
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 0, Fixing error 32: There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme'
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 98.7142857
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 401
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 98.7142857
+98.7142857 + 1.0 * (-2 + 1.0 * 98.7142857 - 98.7142857) = 96.7142857
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 32, context 0, action 99999 delete to new weight 96.7142857
+
+
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 1, Fixing error 401: The typed element must have a type
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 98.7142857
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 98.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+98.7142857 + 1.0 * (-2 + 1.0 - 98.7142857) = -1.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight -1.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 69.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 10 ms
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 96.7142857
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+96.7142857 + 1.0 * (69 + 1.0 - 96.7142857) = 70.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 32, context 0, action 99999 to new weight 70.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 69
+-1.0 + 1.0 * (69 + 1.0 - -1.0) = 70.0
+mai 07, 2020 4:17:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 401, context 0, action 591449609 to new weight 70.0
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.reward.PreferUnderstandability rewardcalculateRewardFor
+INFO: Understandability of the metamodel: 1.2857143
+Time to get metric: 454 ms
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: setEType, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 24 TOTAL REWARD 331.0
+
+
+
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Time repairing model: 13419 ms
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: 
+-----------------ALL SEQUENCES FOUND-------------------
+SIZE: 6
+DISCARDED SEQUENCES: 19
+--------::::B E S T   S E Q U E N C E   I S::::---------
+Sequence [id=0, seq=[ErrorAction [Error: 32 There should not be a feature named 'gradingscheme' as well a feature named 'gradingScheme', Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 401 The typed element must have a type, Action: delete, Error hierarchy: 0]
+], weight=331.0]
+
+ with 2 actions.
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: Saving initialized
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: document prepared
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace3/ParmorelRunnable/knowledge.xml
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: Saving initialized
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: document prepared
+mai 07, 2020 4:17:11 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace3/ParmorelRunnable/knowledge.xml

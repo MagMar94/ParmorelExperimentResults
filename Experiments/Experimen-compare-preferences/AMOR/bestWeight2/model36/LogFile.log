@@ -1,0 +1,978 @@
+apr. 11, 2020 3:39:05 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Repairing d5.ecore
+apr. 11, 2020 3:39:05 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Running with preferences [0, 2]
+apr. 11, 2020 3:39:05 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initial number of errors in model: 1
+Maximum number of steps per episode: 20
+Errors to fix: [Error 17, message=The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+]
+apr. 11, 2020 3:39:05 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Initializing Q-table for the errors.
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Number of episodes: 25
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 300.00629201390245
+0.0 + 1.0 * (0 + 1.0 * 300.00629201390245 - 0.0) = 300.00629201390245
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 300.00629201390245
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 300.00629201390245
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 300.00629201390245
+Alpha: 1.0
+
+Reward: 0
+300.00629201390245 + 1.0 * (0 - 300.00629201390245) = 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 0 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 300.00629201390245
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 300.00629201390245
+Alpha: 0.9608333333333333
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 300.003014360618
+300.00629201390245 + 0.9608333333333333 * (0 + 1.0 * 300.003014360618 - 300.00629201390245) = 300.0031427353716
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 300.0031427353716
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 300.003014360618
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 300.003014360618
+Alpha: 0.9608333333333333
+
+Reward: 0
+300.003014360618 + 0.9608333333333333 * (0 - 300.003014360618) = 11.750118062457545
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 11.750118062457545
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 1 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 300.0031427353716
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 300.0031427353716
+Alpha: 0.9216666666666666
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 11.750118062457545
+300.0031427353716 + 0.9216666666666666 * (0 + 1.0 * 11.750118062457545 - 300.0031427353716) = 34.329938328502465
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 34.329938328502465
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 11.750118062457545
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 11.750118062457545
+Alpha: 0.9216666666666666
+
+Reward: 0
+11.750118062457545 + 0.9216666666666666 * (0 - 11.750118062457545) = 0.9204259148925082
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 0.9204259148925082
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 2 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 34.329938328502465
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 34.329938328502465
+Alpha: 0.8825000000000001
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 0.9204259148925082
+34.329938328502465 + 0.8825000000000001 * (0 + 1.0 * 0.9204259148925082 - 34.329938328502465) = 4.846043623491674
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 4.846043623491674
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 0.9204259148925082
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.9204259148925082
+Alpha: 0.8825000000000001
+
+Reward: 0
+0.9204259148925082 + 0.8825000000000001 * (0 - 0.9204259148925082) = 0.10815004499986969
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 0.10815004499986969
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 3 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 4.846043623491674
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 4.846043623491674
+Alpha: 0.8433333333333334
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 0.10815004499986969
+4.846043623491674 + 0.8433333333333334 * (0 + 1.0 * 0.10815004499986969 - 4.846043623491674) = 0.8504200389635854
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 0.8504200389635854
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 0.10815004499986969
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.10815004499986969
+Alpha: 0.8433333333333334
+
+Reward: 0
+0.10815004499986969 + 0.8433333333333334 * (0 - 0.10815004499986969) = 0.016943507049979573
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 0.016943507049979573
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 4 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action unsetEGenericType in context 0 with weight 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 0.8041666666666667
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 0.016943507049979573
+0.0 + 0.8041666666666667 * (0 + 1.0 * 0.016943507049979573 - 0.0) = 0.01362540358602524
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action 2117488161 unsetEGenericType to new weight 0.01362540358602524
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 0.016943507049979573
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.016943507049979573
+Alpha: 0.8041666666666667
+
+Reward: 0
+0.016943507049979573 + 0.8041666666666667 * (0 - 0.016943507049979573) = 0.0033181034639543326
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 0.0033181034639543326
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 5 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 0.8504200389635854
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.8504200389635854
+Alpha: 0.765
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 0.0033181034639543326
+0.8504200389635854 + 0.765 * (0 + 1.0 * 0.0033181034639543326 - 0.8504200389635854) = 0.2023870583063676
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 0.2023870583063676
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 0.0033181034639543326
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0033181034639543326
+Alpha: 0.765
+
+Reward: 0
+0.0033181034639543326 + 0.765 * (0 - 0.0033181034639543326) = 7.79754314029268E-4
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 7.79754314029268E-4
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 6 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 0.2023870583063676
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2023870583063676
+Alpha: 0.7258333333333333
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 7.79754314029268E-4
+0.2023870583063676 + 0.7258333333333333 * (0 + 1.0 * 7.79754314029268E-4 - 0.2023870583063676) = 0.056053756825262036
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 0.056053756825262036
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 7.79754314029268E-4
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 7.79754314029268E-4
+Alpha: 0.7258333333333333
+
+Reward: 0
+7.79754314029268E-4 + 0.7258333333333333 * (0 - 7.79754314029268E-4) = 2.1378264109635768E-4
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 2.1378264109635768E-4
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 7 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 0.056053756825262036
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.056053756825262036
+Alpha: 0.6866666666666668
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 2.1378264109635768E-4
+0.056053756825262036 + 0.6866666666666668 * (0 + 1.0 * 2.1378264109635768E-4 - 0.056053756825262036) = 0.017710307885468263
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 0.017710307885468263
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 0.6866666666666668
+
+Reward: 0
+0.0 + 0.6866666666666668 * (0 - 0.0) = 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 8 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 0.017710307885468263
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.017710307885468263
+Alpha: 0.6475
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 2.1378264109635768E-4
+0.017710307885468263 + 0.6475 * (0 + 1.0 * 2.1378264109635768E-4 - 0.017710307885468263) = 0.006381307789737455
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 0.006381307789737455
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 2.1378264109635768E-4
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 2.1378264109635768E-4
+Alpha: 0.6475
+
+Reward: 0
+2.1378264109635768E-4 + 0.6475 * (0 - 2.1378264109635768E-4) = 7.53583809864661E-5
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 7.53583809864661E-5
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 9 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action unsetEGenericType in context 0 with weight 0.01362540358602524
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.01362540358602524
+Alpha: 0.6083333333333334
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 7.53583809864661E-5
+0.01362540358602524 + 0.6083333333333334 * (0 + 1.0 * 7.53583809864661E-5 - 0.01362540358602524) = 0.005382459419626652
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action 2117488161 unsetEGenericType to new weight 0.005382459419626652
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 7.53583809864661E-5
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 7.53583809864661E-5
+Alpha: 0.6083333333333334
+
+Reward: 0
+7.53583809864661E-5 + 0.6083333333333334 * (0 - 7.53583809864661E-5) = 2.951536588636588E-5
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 2.951536588636588E-5
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 10 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 0.006381307789737455
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.006381307789737455
+Alpha: 0.5691666666666666
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 2.951536588636588E-5
+0.006381307789737455 + 0.5691666666666666 * (0 + 1.0 * 2.951536588636588E-5 - 0.006381307789737455) = 0.0027660792684955442
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 0.0027660792684955442
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 2.951536588636588E-5
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 2.951536588636588E-5
+Alpha: 0.5691666666666666
+
+Reward: 0
+2.951536588636588E-5 + 0.5691666666666666 * (0 - 2.951536588636588E-5) = 1.271620346937597E-5
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 1.271620346937597E-5
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 11 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action unsetEGenericType in context 0 with weight 0.005382459419626652
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.005382459419626652
+Alpha: 0.53
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 1.271620346937597E-5
+0.005382459419626652 + 0.53 * (0 + 1.0 * 1.271620346937597E-5 - 0.005382459419626652) = 0.0025364955150632956
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action 2117488161 unsetEGenericType to new weight 0.0025364955150632956
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 1.271620346937597E-5
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.271620346937597E-5
+Alpha: 0.53
+
+Reward: 0
+1.271620346937597E-5 + 0.53 * (0 - 1.271620346937597E-5) = 5.976615630606705E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 5.976615630606705E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 12 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 0.0027660792684955442
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0027660792684955442
+Alpha: 0.49083333333333334
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 5.976615630606705E-6
+0.0027660792684955442 + 0.49083333333333334 * (0 + 1.0 * 5.976615630606705E-6 - 0.0027660792684955442) = 0.0014113288830476707
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 0.0014113288830476707
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 5.976615630606705E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 5.976615630606705E-6
+Alpha: 0.49083333333333334
+
+Reward: 0
+5.976615630606705E-6 + 0.49083333333333334 * (0 - 5.976615630606705E-6) = 3.043093458583914E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 3.043093458583914E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 13 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action unsetEGenericType in context 0 with weight 0.0025364955150632956
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0025364955150632956
+Alpha: 0.45166666666666666
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 3.043093458583914E-6
+0.0025364955150632956 + 0.45166666666666666 * (0 + 1.0 * 3.043093458583914E-6 - 0.0025364955150632956) = 0.0013922195046385008
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action 2117488161 unsetEGenericType to new weight 0.0013922195046385008
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 0.45166666666666666
+
+Reward: 0
+0.0 + 0.45166666666666666 * (0 - 0.0) = 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 14 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 0.4125
+
+Reward: 0
+0.0 + 0.4125 * (0 - 0.0) = 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -591535257 setEType to new weight 0.0
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 15 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 0.0014113288830476707
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0014113288830476707
+Alpha: 0.3733333333333334
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 3.043093458583914E-6
+0.0014113288830476707 + 0.3733333333333334 * (0 + 1.0 * 3.043093458583914E-6 - 0.0014113288830476707) = 8.855688549344114E-4
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 8.855688549344114E-4
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 3.043093458583914E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 3.043093458583914E-6
+Alpha: 0.3733333333333334
+
+Reward: 0
+3.043093458583914E-6 + 0.3733333333333334 * (0 - 3.043093458583914E-6) = 1.9070052340459192E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 1.9070052340459192E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 16 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action unsetEGenericType in context 0 with weight 0.0013922195046385008
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0013922195046385008
+Alpha: 0.3341666666666667
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 1.9070052340459192E-6
+0.0013922195046385008 + 0.3341666666666667 * (0 + 1.0 * 1.9070052340459192E-6 - 0.0013922195046385008) = 9.276234110875119E-4
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action 2117488161 unsetEGenericType to new weight 9.276234110875119E-4
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 1.9070052340459192E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.9070052340459192E-6
+Alpha: 0.3341666666666667
+
+Reward: 0
+1.9070052340459192E-6 + 0.3341666666666667 * (0 - 1.9070052340459192E-6) = 1.269747651668908E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 1.269747651668908E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 17 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action unsetEGenericType in context 0 with weight 9.276234110875119E-4
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 9.276234110875119E-4
+Alpha: 0.29500000000000004
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 1.269747651668908E-6
+9.276234110875119E-4 + 0.29500000000000004 * (0 + 1.0 * 1.269747651668908E-6 - 9.276234110875119E-4) = 6.543490803739382E-4
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action 2117488161 unsetEGenericType to new weight 6.543490803739382E-4
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 1.269747651668908E-6
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 1.269747651668908E-6
+Alpha: 0.29500000000000004
+
+Reward: 0
+1.269747651668908E-6 + 0.29500000000000004 * (0 - 1.269747651668908E-6) = 8.9517209442658E-7
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 8.9517209442658E-7
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 18 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:06 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.0
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 0.25583333333333336
+
+Reward: 0
+0.0 + 0.25583333333333336 * (0 - 0.0) = 0.0
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action 99999 delete to new weight 0.0
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 19 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 8.855688549344114E-4
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 8.855688549344114E-4
+Alpha: 0.21666666666666679
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 8.9517209442658E-7
+8.855688549344114E-4 + 0.21666666666666679 * (0 + 1.0 * 8.9517209442658E-7 - 8.855688549344114E-4) = 6.938895569857479E-4
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 6.938895569857479E-4
+
+
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 8.9517209442658E-7
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 8.9517209442658E-7
+Alpha: 0.21666666666666679
+
+Reward: 0
+8.9517209442658E-7 + 0.21666666666666679 * (0 - 8.9517209442658E-7) = 7.012181406341542E-7
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 7.012181406341542E-7
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 20 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setTransient in context 0 with weight 0.0
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 0.1775000000000001
+
+Reward: 0
+0.0 + 0.1775000000000001 * (0 - 0.0) = 0.0
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action 1022795423 setTransient to new weight 0.0
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 21 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 6.938895569857479E-4
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 6.938895569857479E-4
+Alpha: 0.1383333333333333
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 7.012181406341542E-7
+6.938895569857479E-4 + 0.1383333333333333 * (0 + 1.0 * 7.012181406341542E-7 - 6.938895569857479E-4) = 5.979985034455073E-4
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 5.979985034455073E-4
+
+
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing random action.
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.0
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 0.1383333333333333
+
+Reward: 0
+0.0 + 0.1383333333333333 * (0 - 0.0) = 0.0
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 99999 delete to new weight 0.0
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 22 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action unsetEGenericType in context 0 with weight 6.543490803739382E-4
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 6.543490803739382E-4
+Alpha: 0.09916666666666674
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 7.012181406341542E-7
+6.543490803739382E-4 + 0.09916666666666674 * (0 + 1.0 * 7.012181406341542E-7 - 6.543490803739382E-4) = 5.895290007024689E-4
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action 2117488161 unsetEGenericType to new weight 5.895290007024689E-4
+
+
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 7.012181406341542E-7
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 7.012181406341542E-7
+Alpha: 0.09916666666666674
+
+Reward: 0
+7.012181406341542E-7 + 0.09916666666666674 * (0 - 7.012181406341542E-7) = 6.316806750212672E-7
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 6.316806750212672E-7
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 23 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 0, Fixing error 17: The attribute 'Entity.id' is not transient so it must have a data type that is serializable
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action basicUnsetEGenericType in context 0 with weight 5.979985034455073E-4
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Next error code: 40
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 5.979985034455073E-4
+Alpha: 0.06000000000000005
+Gamma: 1.0
+Reward: 0
+Next optimal action Q-value: 6.316806750212672E-7
+5.979985034455073E-4 + 0.06000000000000005 * (0 + 1.0 * 6.316806750212672E-7 - 5.979985034455073E-4) = 5.621564940792781E-4
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 17, context 0, action -584855373 basicUnsetEGenericType to new weight 5.621564940792781E-4
+
+
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 1, Fixing error 40: The typed element must have a type
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer chooseAction
+INFO: Choosing optimal action
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 6.316806750212672E-7
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 6.316806750212672E-7
+Alpha: 0.06000000000000005
+
+Reward: 0
+6.316806750212672E-7 + 0.06000000000000005 * (0 - 6.316806750212672E-7) = 5.937798345199911E-7
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleStep
+INFO: Updated Q-table for error 40, context 0, action 591449609 setEType to new weight 5.937798345199911E-7
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer handleEpisode
+INFO: EPISODE 24 TOTAL REWARD 0
+
+
+
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: Time repairing model: 1636 ms
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.modelrepair.QModelFixer fixModel
+INFO: 
+-----------------ALL SEQUENCES FOUND-------------------
+SIZE: 17
+DISCARDED SEQUENCES: 8
+--------::::B E S T   S E Q U E N C E   I S::::---------
+Sequence [id=0, seq=[ErrorAction [Error: 17 The attribute 'Entity.id' is not transient so it must have a data type that is serializable, Action: basicUnsetEGenericType, Error hierarchy: 0]
+, ErrorAction [Error: 40 The typed element must have a type, Action: delete, Error hierarchy: 0]
+], weight=0.0]
+
+ with 2 actions.
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+apr. 11, 2020 3:39:07 P.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace2/ParmorelRunnable/knowledge.xml

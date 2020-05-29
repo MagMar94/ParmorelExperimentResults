@@ -1,0 +1,1875 @@
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Repairing iolist.ecore
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Running with preferences [PREFER_CLOSE_DISTANCE_TO_ORIGINAL, PREFER_MAINTAINABILITY]
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Initial number of errors in model: 2
+Maximum number of steps per episode: 12
+Errors to fix: [Error 38, message=The default value literal 'MEAN' must be a valid literal of the attribute's type in package 0
+, Error 38, message=The default value literal 'WEIGHTED' must be a valid literal of the attribute's type in package 0
+]
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Initializing Q-table for the errors.
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Number of episodes: 25
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 278.4
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 278.4
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 278.4
+278.4 + 1.0 * (-2 + 1.0 * 278.4 - 278.4) = 276.4
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 276.4
+
+
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight -21.599999999999994
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -21.599999999999994
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+-21.599999999999994 + 1.0 * (-2 + 1.0 - -21.599999999999994) = -1.0
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight -1.0
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 400 ms
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 276.4
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+276.4 + 1.0 * (100 + 1.0 - 276.4) = 101.0
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 101.0
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 364 ms
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+]
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 0 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.6
+72.6 + 1.0 * (-2 + 1.0 * 72.6 - 72.6) = 70.6
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.6
+
+
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight 72.6
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:55:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight -1.0
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 394 ms
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.6 + 1.0 * (100 + 1.0 - 70.6) = 101.0
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 101.0
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 360 ms
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 1 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.6
+72.6 + 1.0 * (-2 + 1.0 * 72.6 - 72.6) = 70.6
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.6
+
+
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight 72.6
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:55:53 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight -1.0
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 427 ms
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.6 + 1.0 * (100 + 1.0 - 70.6) = 101.0
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 101.0
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 375 ms
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 2 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.6
+72.6 + 1.0 * (-2 + 1.0 * 72.6 - 72.6) = 70.6
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.6
+
+
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight 72.6
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:55:54 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight -1.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 420 ms
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.6 + 1.0 * (100 + 1.0 - 70.6) = 101.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 101.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 384 ms
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 3 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.6
+72.6 + 1.0 * (-2 + 1.0 * 72.6 - 72.6) = 70.6
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.6
+
+
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight 72.6
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight -1.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 410 ms
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.6 + 1.0 * (100 + 1.0 - 70.6) = 101.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:55:55 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 101.0
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 384 ms
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 4 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight 72.6
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.6
+72.6 + 1.0 * (-2 + 1.0 * 72.6 - 72.6) = 70.6
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action 1999964618 setDefaultValueLiteral to new weight 70.6
+
+
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 428 ms
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.6 + 1.0 * (100 + 1.0 - 70.6) = 101.0
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 101.0
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:55:56 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 383 ms
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+]
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 5 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.6
+72.6 + 1.0 * (-2 + 1.0 * 72.6 - 72.6) = 70.6
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.6
+
+
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight 72.6
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight -1.0
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 411 ms
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.6 + 1.0 * (100 + 1.0 - 70.6) = 101.0
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:55:57 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 101.0
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 401 ms
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 6 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.6
+72.6 + 1.0 * (-2 + 1.0 * 72.6 - 72.6) = 70.6
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.6
+
+
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight 72.6
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight -1.0
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 420 ms
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.6 + 1.0 * (100 + 1.0 - 70.6) = 101.0
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 101.0
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 384 ms
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 7 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.6
+72.6 + 1.0 * (-2 + 1.0 * 72.6 - 72.6) = 70.6
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.6
+
+
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight 72.6
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:55:58 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight -1.0
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 419 ms
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.6 + 1.0 * (100 + 1.0 - 70.6) = 101.0
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 101.0
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 388 ms
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 8 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.6
+72.6 + 1.0 * (-2 + 1.0 * 72.6 - 72.6) = 70.6
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.6
+
+
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight 72.6
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:55:59 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight -1.0
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 419 ms
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.6 + 1.0 * (100 + 1.0 - 70.6) = 101.0
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 101.0
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 401 ms
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 9 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 2:56:00 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight -21.400000000000006
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: -21.400000000000006
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.6
+-21.400000000000006 + 1.0 * (-2 + 1.0 * 72.6 - -21.400000000000006) = 70.6
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action 99999 delete to new weight 70.6
+
+
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 374 ms
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.6 + 1.0 * (100 + 1.0 - 70.6) = 101.0
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 101.0
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:04 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.2
+Time to get metric: 361 ms
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+]
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 10 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.8
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.8
+
+
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:05 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 72.8
+mai 07, 2020 2:56:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.8 + 1.0 * (-2 + 1.0 - 72.8) = -1.0
+mai 07, 2020 2:56:08 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 399 ms
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 101.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.2
+Time to get metric: 372 ms
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+]
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 11 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.8
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.8
+
+
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -21.599999999999994
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -21.599999999999994
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+-21.599999999999994 + 1.0 * (-2 + 1.0 - -21.599999999999994) = -1.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -591535257 to new weight -1.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 386 ms
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:09 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -591535257 to new weight 101.0
+mai 07, 2020 2:56:10 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 368 ms
+mai 07, 2020 2:56:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setEType, Error hierarchy: 0]
+]
+mai 07, 2020 2:56:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 12 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:10 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 72.8
+mai 07, 2020 2:56:13 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:13 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:13 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action 99999 delete to new weight 70.8
+
+
+mai 07, 2020 2:56:13 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:13 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:13 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:56:13 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:56:13 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 374 ms
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 101.0
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.2
+Time to get metric: 373 ms
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 13 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.8
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.8
+
+
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:14 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 72.8
+mai 07, 2020 2:56:18 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.8 + 1.0 * (-2 + 1.0 - 72.8) = -1.0
+mai 07, 2020 2:56:18 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 485 ms
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 101.0
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.2
+Time to get metric: 406 ms
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 14 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.8
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.8
+
+
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:19 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 72.8
+mai 07, 2020 2:56:24 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.8 + 1.0 * (-2 + 1.0 - 72.8) = -1.0
+mai 07, 2020 2:56:24 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 07, 2020 2:56:24 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:24 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 437 ms
+mai 07, 2020 2:56:24 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:24 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:24 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:24 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 101.0
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.2
+Time to get metric: 395 ms
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 15 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.8
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.8
+
+
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight -21.599999999999994
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -21.599999999999994
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+-21.599999999999994 + 1.0 * (-2 + 1.0 - -21.599999999999994) = -1.0
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 591449609 to new weight -1.0
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 451 ms
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:25 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 591449609 to new weight 101.0
+mai 07, 2020 2:56:26 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 455 ms
+mai 07, 2020 2:56:26 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setEType, Error hierarchy: 0]
+]
+mai 07, 2020 2:56:26 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 16 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:26 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:26 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:26 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 72.8
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action 99999 delete to new weight 70.8
+
+
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 444 ms
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 101.0
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:30 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.2
+Time to get metric: 431 ms
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 17 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 72.6
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.6 + 1.0 * (-2 + 1.0 * 72.8 - 72.6) = 70.8
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -591535257 setEType to new weight 70.8
+
+
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.8
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.8 + 1.0 * (-2 + 1.0 - 72.8) = -1.0
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 441 ms
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -591535257 to new weight 101.0
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:31 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:32 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 408 ms
+mai 07, 2020 2:56:32 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setEType, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+]
+mai 07, 2020 2:56:32 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 18 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:32 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:32 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:32 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 72.8
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action 99999 delete to new weight 70.8
+
+
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 385 ms
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 101.0
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.2
+Time to get metric: 369 ms
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 19 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 2:56:36 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 72.8
+mai 07, 2020 2:56:40 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:40 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:40 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action 99999 delete to new weight 70.8
+
+
+mai 07, 2020 2:56:40 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:40 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:40 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.8
+mai 07, 2020 2:56:40 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.8 + 1.0 * (-2 + 1.0 - 72.8) = -1.0
+mai 07, 2020 2:56:40 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 401 ms
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 101.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.2
+Time to get metric: 397 ms
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 20 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.8
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.8
+
+
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 72.6
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 591449609 to new weight -1.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 473 ms
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:41 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 591449609 to new weight 101.0
+mai 07, 2020 2:56:42 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 381 ms
+mai 07, 2020 2:56:42 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setEType, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:42 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:42 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 21 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:42 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:42 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:42 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 72.8
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action 99999 delete to new weight 70.8
+
+
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 384 ms
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 101.0
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.2
+Time to get metric: 400 ms
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 22 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.8
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action -2078906332 setDefaultValueLiteralGen to new weight 70.8
+
+
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 72.6
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:56:46 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 591449609 to new weight -1.0
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 411 ms
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 591449609 to new weight 101.0
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.4
+Time to get metric: 377 ms
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setEType, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 23 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 0, Fixing error 38: The default value literal 'MEAN' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 07, 2020 2:56:47 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 72.8
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 72.8
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 72.8
+72.8 + 1.0 * (-2 + 1.0 * 72.8 - 72.8) = 70.8
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 38, context 0, action 99999 delete to new weight 70.8
+
+
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 1, Fixing error 38: The default value literal 'WEIGHTED' must be a valid literal of the attribute's type
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 72.6
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 72.6
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+72.6 + 1.0 * (-2 + 1.0 - 72.6) = -1.0
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 100.0
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 390 ms
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 70.8
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+70.8 + 1.0 * (100 + 1.0 - 70.8) = 101.0
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 101.0
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 100
+-1.0 + 1.0 * (100 + 1.0 - -1.0) = 101.0
+mai 07, 2020 2:56:51 P.M. no.hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 101.0
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.reward.PreferMaintainability rewardcalculateRewardFor
+INFO: Maintainability of the metamodel: 27.2
+Time to get metric: 393 ms
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+] already exists.
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 24 TOTAL REWARD 341.0
+
+
+
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Time repairing model: 60346 ms
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: 
+-----------------ALL SEQUENCES FOUND-------------------
+SIZE: 7
+DISCARDED SEQUENCES: 18
+--------::::B E S T   S E Q U E N C E   I S::::---------
+Sequence [id=0, seq=[ErrorAction [Error: 38 The default value literal 'MEAN' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal 'WEIGHTED' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+], weight=341.0]
+
+ with 2 actions.
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: Saving initialized
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: document prepared
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace3/ParmorelRunnable/knowledge.xml
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: Saving initialized
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: document prepared
+mai 07, 2020 2:56:52 P.M. no.hvl.projectparmorel.qlearning.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace3/ParmorelRunnable/knowledge.xml

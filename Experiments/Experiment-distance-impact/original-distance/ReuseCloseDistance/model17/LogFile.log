@@ -1,0 +1,1855 @@
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Repairing abapobj.ecore
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Running with preferences [PREFER_CLOSE_DISTANCE_TO_ORIGINAL, PREFER_REUSE]
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Initial number of errors in model: 9
+Maximum number of steps per episode: 12
+Errors to fix: [Error 50, message=A containment or bidirectional reference must be unique if its upper bound is different from 1 in package 0
+, Error 50, message=A containment or bidirectional reference must be unique if its upper bound is different from 1 in package 0
+, Error 50, message=A containment or bidirectional reference must be unique if its upper bound is different from 1 in package 0
+, Error 50, message=A containment or bidirectional reference must be unique if its upper bound is different from 1 in package 0
+, Error 50, message=A containment or bidirectional reference must be unique if its upper bound is different from 1 in package 0
+, Error 50, message=A containment or bidirectional reference must be unique if its upper bound is different from 1 in package 0
+, Error 50, message=A containment or bidirectional reference must be unique if its upper bound is different from 1 in package 0
+, Error 50, message=A containment or bidirectional reference must be unique if its upper bound is different from 1 in package 0
+, Error 38, message=The default value literal '' must be a valid literal of the attribute's type in package 0
+]
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Initializing Q-table for the errors.
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Number of episodes: 25
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 600.0
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 600.0
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 300.52816904
+600.0 + 1.0 * (-2 + 1.0 * 300.52816904 - 600.0) = 298.52816904
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight 298.52816904
+
+
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 0, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteral in context 0 with weight 300.52816904
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 300.52816904
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+300.52816904 + 1.0 * (-2 + 1.0 - 300.52816904) = -1.0
+mai 06, 2020 9:28:01 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight -1.0
+mai 06, 2020 9:28:02 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 37.0
+mai 06, 2020 9:28:02 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 213 ms
+mai 06, 2020 9:28:02 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 298.52816904
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 37
+298.52816904 + 1.0 * (37 + 1.0 - 298.52816904) = 38.0
+mai 06, 2020 9:28:02 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 38.0
+mai 06, 2020 9:28:02 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 37
+-1.0 + 1.0 * (37 + 1.0 - -1.0) = 38.0
+mai 06, 2020 9:28:02 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 1999964618 to new weight 38.0
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2091 ms
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+]
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 0 TOTAL REWARD 70.0
+
+
+
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 0.2795699
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2795699
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.5285714
+0.2795699 + 1.0 * (-2 + 1.0 * 0.5285714 - 0.2795699) = -1.4714285999999999
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight -1.4714285999999999
+
+
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 1, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.5285714
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.5285714
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.5285714 + 1.0 * (-2 + 1.0 - 0.5285714) = -1.0
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 239 ms
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.4714285999999999
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.4714285999999999 + 1.0 * (36 + 1.0 - -1.4714285999999999) = 37.0
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 37.0
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:04 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2150 ms
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+]
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 1 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 0.2826087
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.52816904
+0.2826087 + 1.0 * (-2 + 1.0 * 0.52816904 - 0.2826087) = -1.4718309600000001
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight -1.4718309600000001
+
+
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 2, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 0.114285715
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.114285715
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.114285715 + 1.0 * (-2 + 1.0 - 0.114285715) = -1.0
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 591449609 to new weight -1.0
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 248 ms
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.4718309600000001
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.4718309600000001 + 1.0 * (36 + 1.0 - -1.4718309600000001) = 37.0
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 37.0
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:06 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 591449609 to new weight 37.0
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2077 ms
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: setEType, Error hierarchy: 0]
+]
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 2 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 0.2795699
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2795699
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.52816904
+0.2795699 + 1.0 * (-2 + 1.0 * 0.52816904 - 0.2795699) = -1.4718309600000001
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight -1.4718309600000001
+
+
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 3, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 0.52816904
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.52816904
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.52816904 + 1.0 * (-2 + 1.0 - 0.52816904) = -0.9999999999999999
+mai 06, 2020 9:28:08 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -0.9999999999999999
+mai 06, 2020 9:28:09 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 37.0
+mai 06, 2020 9:28:09 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 240 ms
+mai 06, 2020 9:28:09 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.4718309600000001
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 37
+-1.4718309600000001 + 1.0 * (37 + 1.0 - -1.4718309600000001) = 38.0
+mai 06, 2020 9:28:09 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 38.0
+mai 06, 2020 9:28:09 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -0.9999999999999999
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 37
+-0.9999999999999999 + 1.0 * (37 + 1.0 - -0.9999999999999999) = 38.0
+mai 06, 2020 9:28:09 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 38.0
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2055 ms
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+]
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 3 TOTAL REWARD 70.0
+
+
+
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 0.2795699
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2795699
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.52816904
+0.2795699 + 1.0 * (-2 + 1.0 * 0.52816904 - 0.2795699) = -1.4718309600000001
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight -1.4718309600000001
+
+
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 4, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 0.52816904
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.52816904
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.52816904 + 1.0 * (-2 + 1.0 - 0.52816904) = -0.9999999999999999
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -591535257 to new weight -0.9999999999999999
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 237 ms
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.4718309600000001
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.4718309600000001 + 1.0 * (36 + 1.0 - -1.4718309600000001) = 37.0
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 37.0
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -0.9999999999999999
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-0.9999999999999999 + 1.0 * (36 + 1.0 - -0.9999999999999999) = 37.0
+mai 06, 2020 9:28:11 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -591535257 to new weight 37.0
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2047 ms
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: setEType, Error hierarchy: 0]
+]
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 4 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 0.2795699
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2795699
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2795699 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2795699) = -1.7173913
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight -1.7173913
+
+
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 5, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 209 ms
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 37.0
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:13 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2170 ms
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 5 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 0.2826087
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight -1.7173913
+
+
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 6, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 73.0
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 543 ms
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 73
+-1.7173913 + 1.0 * (73 + 1.0 - -1.7173913) = 74.0
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 74.0
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 73
+-1.0 + 1.0 * (73 + 1.0 - -1.0) = 74.0
+mai 06, 2020 9:28:16 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 74.0
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2279 ms
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 6 TOTAL REWARD 142.0
+
+
+
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 0.2826087
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight -1.7173913
+
+
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 7, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 0.2795699
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2795699
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2795699 + 1.0 * (-2 + 1.0 - 0.2795699) = -1.0
+mai 06, 2020 9:28:18 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 06, 2020 9:28:19 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 37.0
+mai 06, 2020 9:28:19 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 263 ms
+mai 06, 2020 9:28:19 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 37
+-1.7173913 + 1.0 * (37 + 1.0 - -1.7173913) = 38.0
+mai 06, 2020 9:28:19 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 38.0
+mai 06, 2020 9:28:19 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 37
+-1.0 + 1.0 * (37 + 1.0 - -1.0) = 38.0
+mai 06, 2020 9:28:19 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 38.0
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2266 ms
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 7 TOTAL REWARD 70.0
+
+
+
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 0.0
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.0 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.0) = -1.7173913
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight -1.7173913
+
+
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 8, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 258 ms
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 951444921 to new weight 37.0
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:21 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2291 ms
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+]
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 8 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 0.2826087
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight -1.7173913
+
+
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 9, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 260 ms
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 951444921 to new weight 37.0
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:24 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2221 ms
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 9 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 0.0
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.0
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.0 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.0) = -1.7173913
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action -969028598 setUpperBound to new weight -1.7173913
+
+
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 10, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:26 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:27 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:27 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 247 ms
+mai 06, 2020 9:28:27 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:27 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action -969028598 to new weight 37.0
+mai 06, 2020 9:28:27 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:27 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2085 ms
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+]
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 10 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 0.2826087
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action -969028598 setUpperBound to new weight -1.7173913
+
+
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 11, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 230 ms
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action -969028598 to new weight 37.0
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:29 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2082 ms
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 11 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 0.2795699
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2795699
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2795699 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2795699) = -1.7173913
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight -1.7173913
+
+
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 12, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setDefaultValueLiteralGen in context 0 with weight 0.2795699
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2795699
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2795699 + 1.0 * (-2 + 1.0 - 0.2795699) = -1.0
+mai 06, 2020 9:28:31 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight -1.0
+mai 06, 2020 9:28:32 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 74.0
+mai 06, 2020 9:28:32 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 524 ms
+mai 06, 2020 9:28:32 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 74
+-1.7173913 + 1.0 * (74 + 1.0 - -1.7173913) = 75.0
+mai 06, 2020 9:28:32 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 75.0
+mai 06, 2020 9:28:32 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 74
+-1.0 + 1.0 * (74 + 1.0 - -1.0) = 75.0
+mai 06, 2020 9:28:32 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -2078906332 to new weight 75.0
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2173 ms
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: setDefaultValueLiteralGen, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 12 TOTAL REWARD 144.0
+
+
+
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 0.2826087
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight -1.7173913
+
+
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 13, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 242 ms
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 951444921 to new weight 37.0
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:34 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2141 ms
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 13 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 0.2826087
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action -969028598 setUpperBound to new weight -1.7173913
+
+
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 14, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:36 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:37 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:37 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 246 ms
+mai 06, 2020 9:28:37 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:37 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action -969028598 to new weight 37.0
+mai 06, 2020 9:28:37 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:37 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2119 ms
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 14 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 0.2826087
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action -969028598 setUpperBound to new weight -1.7173913
+
+
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 15, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 245 ms
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action -969028598 to new weight 37.0
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:39 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2147 ms
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 15 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 0.2826087
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action -969028598 setUpperBound to new weight -1.7173913
+
+
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 16, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:41 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:42 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:42 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 241 ms
+mai 06, 2020 9:28:42 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:42 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action -969028598 to new weight 37.0
+mai 06, 2020 9:28:42 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:42 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2061 ms
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 16 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 0.2826087
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action -969028598 setUpperBound to new weight -1.7173913
+
+
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 17, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 240 ms
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action -969028598 to new weight 37.0
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:44 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2097 ms
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 17 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 0.2826087
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action -969028598 setUpperBound to new weight -1.7173913
+
+
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 18, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 239 ms
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action -969028598 to new weight 37.0
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:46 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2132 ms
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 18 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 0.2826087
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight -1.7173913
+
+
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 19, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 238 ms
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 951444921 to new weight 37.0
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:49 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2153 ms
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 19 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 0.2826087
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action -969028598 setUpperBound to new weight -1.7173913
+
+
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 20, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 238 ms
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action -969028598 to new weight 37.0
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:51 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2090 ms
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 20 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setUpperBound in context 0 with weight 0.2826087
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action -969028598 setUpperBound to new weight -1.7173913
+
+
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 21, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setEType in context 0 with weight 0.2795699
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2795699
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2795699 + 1.0 * (-2 + 1.0 - 0.2795699) = -1.0
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -591535257 to new weight -1.0
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 254 ms
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action -969028598 to new weight 37.0
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:54 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action -591535257 to new weight 37.0
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2051 ms
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution added to possible solitons: [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setUpperBound, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: setEType, Error hierarchy: 0]
+]
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 21 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainment in context 0 with weight 0.2826087
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 951444921 setContainment to new weight -1.7173913
+
+
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 22, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 197 ms
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 951444921 to new weight 37.0
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:28:56 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2225 ms
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainment, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 22 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing random action.
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 0.2795699
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2795699
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2795699 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2795699) = -1.7173913
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight -1.7173913
+
+
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 23, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:28:58 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:28:59 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 73.0
+mai 06, 2020 9:28:59 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 539 ms
+mai 06, 2020 9:28:59 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 73
+-1.7173913 + 1.0 * (73 + 1.0 - -1.7173913) = 74.0
+mai 06, 2020 9:28:59 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 74.0
+mai 06, 2020 9:28:59 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 73
+-1.0 + 1.0 * (73 + 1.0 - -1.0) = 74.0
+mai 06, 2020 9:28:59 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 74.0
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2225 ms
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 23 TOTAL REWARD 142.0
+
+
+
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 0, Fixing error 50: A containment or bidirectional reference must be unique if its upper bound is different from 1
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action setContainmentGen in context 0 with weight 0.2826087
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Next error code: 38
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma: 1.0
+Reward: -2
+Next optimal action Q-value: 0.2826087
+0.2826087 + 1.0 * (-2 + 1.0 * 0.2826087 - 0.2826087) = -1.7173913
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Updated Q-table for error 50, context 0, action 1062131977 setContainmentGen to new weight -1.7173913
+
+
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleEpisode
+INFO: EPISODE 24, STEP 1, Fixing error 38: The default value literal '' must be a valid literal of the attribute's type
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer chooseAction
+INFO: Choosing optimal action
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer handleStep
+INFO: Chose action delete in context 0 with weight 0.2826087
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: 0.2826087
+Alpha: 1.0
+Gamma:1.0
+
+Reward: -2
+0.2826087 + 1.0 * (-2 + 1.0 - 0.2826087) = -1.0
+mai 06, 2020 9:29:01 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight -1.0
+mai 06, 2020 9:29:02 A.M. hvl.projectparmorel.ecore.EcoreSolution calculateDistanceFromOriginal
+INFO: Calculated the distance between the models to 36.0
+mai 06, 2020 9:29:02 A.M. hvl.projectparmorel.reward.PreferCloseDinstanceToOriginalPreference rewardcalculateRewardFor
+INFO: Time to measure distance: 249 ms
+mai 06, 2020 9:29:02 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.7173913
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.7173913 + 1.0 * (36 + 1.0 - -1.7173913) = 37.0
+mai 06, 2020 9:29:02 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 50, context 0, action 1062131977 to new weight 37.0
+mai 06, 2020 9:29:02 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Calculating new Q-value:
+Old Q-value: -1.0
+Alpha: 1.0
+Gamma:1.0
+
+Reward: 36
+-1.0 + 1.0 * (36 + 1.0 - -1.0) = 37.0
+mai 06, 2020 9:29:02 A.M. hvl.projectparmorel.qlearning.QModelFixer updateQTable
+INFO: Updated Q-table for error 38, context 0, action 99999 to new weight 37.0
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.reward.PreferReuse rewardcalculateRewardFor
+INFO: Time to get metric: 2202 ms
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.qlearning.QModelFixer isUnique
+INFO: Solution [ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: delete, Error hierarchy: 0]
+] already exists.
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Solution discarded.
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: EPISODE 24 TOTAL REWARD 68.0
+
+
+
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: Time repairing model: 62509 ms
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.qlearning.QModelFixer fixModel
+INFO: 
+-----------------ALL SEQUENCES FOUND-------------------
+SIZE: 8
+DISCARDED SEQUENCES: 17
+--------::::B E S T   S E Q U E N C E   I S::::---------
+Sequence [id=0, seq=[ErrorAction [Error: 50 A containment or bidirectional reference must be unique if its upper bound is different from 1, Action: setContainmentGen, Error hierarchy: 0]
+, ErrorAction [Error: 38 The default value literal '' must be a valid literal of the attribute's type, Action: setDefaultValueLiteral, Error hierarchy: 0]
+], weight=70.0]
+
+ with 2 actions.
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace3/ParmorelRunnable/knowledge.xml
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving initialized
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: document prepared
+mai 06, 2020 9:29:04 A.M. hvl.projectparmorel.knowledge.Knowledge save
+INFO: Saving completed to /Users/Magnus/Skole/DAT300/EclipseWorkspace3/ParmorelRunnable/knowledge.xml
