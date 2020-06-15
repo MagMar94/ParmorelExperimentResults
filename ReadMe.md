@@ -8,7 +8,7 @@ This is the models in a dataset referred to as the ACMR-set in my thesis. The or
 ## AMOR-set
 This is the models in a dataset referred to as the AMOR-set in my thesis. This set consists of 100 broken models that are mutated versions of 5 original conistent models, mutatet 20 times each.
 
-## ParmorelExperimentResults
+## Experiments
 This is the folder where the results from the different experiments can be found.
 
 ## Other usefull links
